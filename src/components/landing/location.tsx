@@ -1,7 +1,5 @@
-import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { MapPin, Clock, AlertCircle } from "lucide-react";
+import { Clock, AlertCircle } from "lucide-react";
 
 export default function LocationSection() {
   return (
@@ -15,26 +13,19 @@ export default function LocationSection() {
             Estamos te esperando no coração de São Paulo.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="flex justify-center">
-            <Card className="w-full max-w-md shadow-sm">
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <MapPin className="h-8 w-8 text-primary" />
-                  <CardTitle className="font-headline">Nosso Endereço</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-lg">
-                  Av. Rio Branco, 278 - Centro Histórico de São Paulo, SP, 01206-000
-                </p>
-                <Link href="https://www.google.com/maps/search/?api=1&query=Av.+Rio+Branco,+278+-+Centro+Histórico+de+São+Paulo,+São+Paulo+-+SP,+01206-000" target="_blank" rel="noopener noreferrer" className="block">
-                  <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 transform transition-transform duration-200 hover:scale-105">
-                    Abrir no Google Maps
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+            <div className="overflow-hidden rounded-lg shadow-sm w-full max-w-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.653495493024!2d-46.64371812401659!3d-23.54061264883907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58508743f757%3A0x1ca80685de68a529!2sBR%20OCULOS!5e0!3m2!1sen!2sbr!4v1719507963236!5m2!1sen!2sbr"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
           <div className="flex justify-center">
             <Card className="w-full max-w-md shadow-sm">

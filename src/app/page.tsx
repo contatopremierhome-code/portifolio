@@ -3,9 +3,7 @@ import HeroSection from '@/components/landing/hero';
 import PromiseSection from '@/components/landing/promise';
 import LocationSection from '@/components/landing/location';
 import ReviewsSection from '@/components/landing/reviews';
-import GallerySection from '@/components/landing/gallery';
 import PageFooter from '@/components/landing/footer';
-import StickyFooter from '@/components/landing/sticky-footer';
 
 export default function Home() {
   return (
@@ -16,10 +14,8 @@ export default function Home() {
         <PromiseSection />
         <LocationSection />
         <ReviewsSection />
-        <GallerySection />
       </main>
       <PageFooter />
-      <StickyFooter />
     </div>
   );
 }
