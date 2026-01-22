@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-person-smiling",
+      "description": "Stylish person wearing trendy frames, smiling.",
+      "imageUrl": "https://images.unsplash.com/photo-1653146886876-101e36a3cf90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdHlsaXNoJTIwcGVyc29uJTIwZ2xhc3Nlc3xlbnwwfHx8fDE3NjkwNzEyODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stylish person glasses"
+    },
+    {
+      "id": "gallery-acetate",
+      "description": "Modern Acetate glasses style.",
+      "imageUrl": "https://images.unsplash.com/photo-1616560787699-7d1261c2675c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhY2V0YXRlJTIwZ2xhc3Nlc3xlbnwwfHx8fDE3NjkxMDkxNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "acetate glasses"
+    },
+    {
+      "id": "gallery-metal",
+      "description": "Classic Metal glasses style.",
+      "imageUrl": "https://images.unsplash.com/photo-1755869985928-0e61815beddb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZXRhbCUyMGdsYXNzZXN8ZW58MHx8fHwxNzY5MTA5MTY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal glasses"
+    },
+    {
+      "id": "gallery-sports",
+      "description": "Sports Edition glasses style.",
+      "imageUrl": "https://images.unsplash.com/photo-1620138996644-92a1043066ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzcG9ydHMlMjBzdW5nbGFzc2VzfGVufDB8fHx8MTc2OTEwOTE2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports sunglasses"
+    },
+    {
+      "id": "gallery-blue-light",
+      "description": "Blue Light Blockers glasses style.",
+      "imageUrl": "https://images.unsplash.com/photo-1565735624745-c8aa249d8e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibHVlJTIwbGlnaHQlMjBnbGFzc2VzfGVufDB8fHx8MTc2OTEwOTE2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blue light glasses"
+    }
+  ]
 }
