@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Clock, AlertCircle } from "lucide-react";
+import { Clock } from "lucide-react";
 
 export default function LocationSection() {
   return (
@@ -39,12 +39,6 @@ export default function LocationSection() {
                 <div className="flex justify-between"><span>Segunda a Sexta:</span> <span>08:00 - 16:00</span></div>
                 <div className="flex justify-between"><span>Sábado:</span> <span>08:00 - 14:00</span></div>
                 <div className="flex justify-between"><span>Domingo:</span> <span>Fechado</span></div>
-                <div className="!mt-6 flex items-start gap-3 rounded-lg border border-accent/50 bg-accent/10 p-4 text-sm text-accent">
-                  <AlertCircle className="h-5 w-5 flex-shrink-0 text-accent mt-0.5" />
-                  <p>
-                    <span className="font-bold">Dica de ouro:</span> Chegue até às 14h de segunda a sábado para garantir seu óculos pronto ainda hoje!
-                  </p>
-                </div>
               </CardContent>
             </Card>
           </div>
