@@ -17,7 +17,7 @@ const skills = [
     level: "Avançado", 
     color: "#217346", 
     class: "glow-excel",
-    logo: "https://cdn.simpleicons.org/microsoftexcel/217346",
+    logo: "https://i.imgur.com/IiTdh12.png",
     desc: "Gestão de dados, fórmulas complexas e cronogramas."
   },
   { 
@@ -33,7 +33,7 @@ const skills = [
     level: "Básico/Intermediário", 
     color: "#31752F", 
     class: "glow-msproject",
-    logo: "https://cdn.simpleicons.org/microsoft/31752F",
+    logo: "https://i.imgur.com/jMT5oMV.png",
     desc: "Planejamento estratégico e controle de prazos de obra."
   },
 ];

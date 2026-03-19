@@ -1,8 +1,11 @@
 'use client';
 
 import { useEffect } from 'react';
+import { useAudio } from './use-audio';
 
 export function useReveal() {
+  const { playSound } = useAudio();
+
   useEffect(() => {
     const reveal = () => {
       const reveals = document.querySelectorAll('.reveal');
@@ -10,8 +13,13 @@ export function useReveal() {
         const windowHeight = window.innerHeight;
         const elementTop = element.getBoundingClientRect().top;
         const elementVisible = 150;
+        
         if (elementTop < windowHeight - elementVisible) {
-          element.classList.add('active');
+          if (!element.classList.contains('active')) {
+            element.classList.add('active');
+            // Play construction sound when a new section is "built" on screen
+            playSound('construct');
+          }
         }
       });
     };
@@ -19,5 +27,5 @@ export function useReveal() {
     window.addEventListener('scroll', reveal);
     reveal(); // Initial check
     return () => window.removeEventListener('scroll', reveal);
-  }, []);
+  }, [playSound]);
 }
