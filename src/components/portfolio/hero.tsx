@@ -2,76 +2,103 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, MapPin, Calendar, GraduationCap } from 'lucide-react';
+import { MessageCircle, MapPin, GraduationCap, HardHat, Ruler } from 'lucide-react';
 import Link from 'next/link';
+import { useAudio } from '@/hooks/use-audio';
 
 export default function HeroSection() {
+  const { playSound } = useAudio();
+
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-4 overflow-hidden">
-      <div className="container relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto space-y-10 reveal">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-4 overflow-hidden blueprint-grid">
+      {/* Elementos de Decoração Industrial */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+        <div className="absolute top-20 left-10 text-primary/5 rotate-12 animate-float">
+          <Ruler size={300} strokeWidth={0.5} />
+        </div>
+        <div className="absolute bottom-20 right-10 text-primary/5 -rotate-12 animate-float" style={{ animationDelay: '1s' }}>
+          <HardHat size={300} strokeWidth={0.5} />
+        </div>
+      </div>
+
+      <div className="container relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto space-y-12">
         
-        {/* Foto de Perfil */}
-        <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-primary to-blue-400 rounded-full blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
-          <div className="relative h-48 w-44 md:h-56 md:w-52 rounded-2xl border-2 border-white/10 p-1 bg-card/50 backdrop-blur-md">
-            <div className="relative h-full w-full rounded-xl overflow-hidden">
+        {/* Foto de Perfil com Efeito de "Construção" */}
+        <div className="relative group perspective-1000 animate-construct">
+          <div className="absolute -inset-2 bg-gradient-to-r from-primary via-blue-400 to-primary rounded-3xl blur opacity-20 group-hover:opacity-60 transition duration-1000"></div>
+          <div className="relative h-56 w-52 md:h-72 md:w-64 rounded-3xl border-2 border-white/10 p-1 bg-card/50 backdrop-blur-md overflow-hidden transform group-hover:rotate-y-6 transition-transform duration-500 shadow-2xl">
+            <div className="relative h-full w-full rounded-2xl overflow-hidden">
               <Image
                 src="https://imgur.com/J5gtnyg.jpg"
                 alt="Jeovane de Oliveira Costa"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
                 priority
               />
+              {/* Overlay de Scan */}
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-transparent h-1/2 w-full animate-scan opacity-0 group-hover:opacity-100"></div>
             </div>
+          </div>
+          {/* Tag de Status */}
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1.5 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap">
+            Disponível para Estágio
           </div>
         </div>
 
-        <div className="space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold tracking-widest uppercase">
-            Disponível para Estágio
-          </div>
-          <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white leading-none">
-            JEOVANE <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">COSTA</span>
+        <div className="space-y-6 animate-construct" style={{ animationDelay: '0.2s' }}>
+          <h1 className="text-6xl md:text-9xl font-black tracking-tighter text-white leading-none">
+            JEOVANE <br/> 
+            <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
+              COSTA
+              <span className="absolute -bottom-2 left-0 w-full h-2 bg-primary/20 rounded-full blur-sm"></span>
+            </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground font-medium max-w-2xl mx-auto">
+          <p className="text-2xl md:text-3xl text-muted-foreground font-light tracking-widest uppercase">
             Estudante de Engenharia Civil
           </p>
 
-          {/* Resumo de Impacto */}
-          <div className="max-w-2xl mx-auto p-6 rounded-2xl glass-card border-primary/20">
-            <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">Perfil Profissional</h2>
-            <p className="text-white text-lg font-semibold leading-relaxed">
-              Dedicado, Analítico e Orientado a Resultados. 
+          <div className="max-w-2xl mx-auto p-8 rounded-[2.5rem] glass-card border-primary/20 relative overflow-hidden group">
+            <div className="absolute top-0 left-0 w-2 h-full bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
+            <h2 className="text-primary font-black uppercase tracking-[0.3em] text-xs mb-4">Perfil Profissional</h2>
+            <p className="text-white text-xl font-bold leading-tight italic">
+              "Dedicado, Analítico e Orientado a Resultados."
             </p>
-            <p className="text-muted-foreground mt-2 leading-relaxed">
-              Mais do que um estudante de Engenharia Civil, sou um profissional formado pela prática e pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela capacidade de autogestão.
+            <p className="text-muted-foreground mt-4 leading-relaxed text-lg">
+              Mais do que um estudante, sou um profissional formado pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela capacidade de autogestão.
             </p>
           </div>
           
-          <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground pt-4">
-            <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/5">
-              <Calendar className="h-4 w-4 text-primary" />
-              <span className="text-sm">29 Anos</span>
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
+            <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+              <MapPin className="h-5 w-5 text-primary" />
+              <span className="text-sm font-bold text-white/80">São Paulo - SP</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/5">
-              <MapPin className="h-4 w-4 text-primary" />
-              <span className="text-sm">São Paulo - SP</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/5">
-              <GraduationCap className="h-4 w-4 text-primary" />
-              <span className="text-sm">UNINOVE</span>
+            <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+              <GraduationCap className="h-5 w-5 text-primary" />
+              <span className="text-sm font-bold text-white/80">UNINOVE | 29 Anos</span>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center">
-          <Link href="https://wa.me/5511919854675?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." target="_blank" className="flex-1">
-            <Button size="lg" className="w-full bg-[#25D366] text-white hover:bg-[#22c55e] h-16 text-lg rounded-2xl shadow-2xl transition-all hover:scale-[1.02] active:scale-95 font-bold uppercase tracking-wider animate-pulse-whatsapp border-none">
-              <MessageCircle className="mr-2 h-6 w-6 fill-current" />
-              Contratar para Estágio
+        <div className="flex flex-col sm:flex-row gap-6 w-full max-w-md justify-center pt-8 animate-construct" style={{ animationDelay: '0.4s' }}>
+          <Link 
+            href="https://wa.me/5511919854675?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." 
+            target="_blank" 
+            className="flex-1"
+            onClick={() => playSound('click')}
+          >
+            <Button size="lg" className="w-full bg-[#25D366] text-white hover:bg-[#22c55e] h-20 text-xl rounded-3xl shadow-[0_20px_50px_rgba(37,211,102,0.2)] transition-all hover:scale-105 active:scale-95 font-black uppercase tracking-tighter animate-pulse-whatsapp border-none">
+              <MessageCircle className="mr-3 h-8 w-8 fill-current" />
+              Contratar Agora
             </Button>
           </Link>
         </div>
+      </div>
+
+      {/* Indicador de Scroll */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30 animate-bounce">
+        <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-white">Scroll</span>
+        <div className="w-px h-12 bg-gradient-to-b from-primary to-transparent"></div>
       </div>
     </section>
   );

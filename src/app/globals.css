@@ -30,18 +30,38 @@
     @apply border-border;
   }
   body {
-    @apply bg-[#121212] text-foreground font-sans selection:bg-primary/30;
+    @apply bg-[#121212] text-foreground font-sans selection:bg-primary/30 overflow-x-hidden;
     font-family: 'Inter', sans-serif;
   }
 }
 
+/* Glassmorphism Premium */
 .glass-card {
-  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
+  @apply bg-white/5 backdrop-blur-2xl border border-white/10 shadow-2xl;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+/* Animações de Construção */
+@keyframes construct-in {
+  from {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9) rotateX(-20deg);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotateX(0);
+    filter: blur(0);
+  }
+}
+
+.animate-construct {
+  animation: construct-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes pulse-whatsapp {
   0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
   100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
@@ -50,46 +70,68 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-15px) rotate(1deg); }
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
-@keyframes crane-move {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(20px); }
-}
-
-.animate-crane {
-  animation: crane-move 4s ease-in-out infinite;
-}
-
+/* Reveal System */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1);
+  transform: translateY(50px) rotateX(-5deg);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform, opacity;
 }
 
 .reveal.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) rotateX(0);
 }
 
-.glow-autocad:hover { filter: drop-shadow(0 0 15px #FF0000); transform: scale(1.05); }
-.glow-excel:hover { filter: drop-shadow(0 0 15px #217346); transform: scale(1.05); }
-.glow-revit:hover { filter: drop-shadow(0 0 15px #0696D7); transform: scale(1.05); }
-.glow-msproject:hover { filter: drop-shadow(0 0 15px #31752F); transform: scale(1.05); }
-
-.bg-industrial-gradient {
-  background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #121212 100%);
-}
-
+/* Blueprint Background */
 .blueprint-grid {
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.blueprint-grid::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, transparent 0%, #121212 80%);
+  pointer-events: none;
+}
+
+/* Industrial Glows */
+.glow-autocad:hover { filter: drop-shadow(0 0 25px rgba(255, 0, 0, 0.4)); transform: translateY(-5px); }
+.glow-excel:hover { filter: drop-shadow(0 0 25px rgba(33, 115, 70, 0.4)); transform: translateY(-5px); }
+.glow-revit:hover { filter: drop-shadow(0 0 25px rgba(6, 150, 215, 0.4)); transform: translateY(-5px); }
+.glow-msproject:hover { filter: drop-shadow(0 0 25px rgba(49, 117, 47, 0.4)); transform: translateY(-5px); }
+
+/* Scan Line Animation for Timeline */
+@keyframes scan-line {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(200%); opacity: 0; }
+}
+
+.animate-scan {
+  animation: scan-line 4s linear infinite;
+}
+
+/* Crane Hook Simulation */
+.crane-cable {
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(59, 130, 246, 0.5), transparent);
+  height: 100vh;
+  position: absolute;
+  top: -100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: height 1s ease-out;
 }
