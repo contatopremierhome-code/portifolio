@@ -40,7 +40,7 @@ export default function AboutSection() {
                 <h3 className="text-3xl md:text-5xl text-white font-black tracking-tighter uppercase italic">Futuro Engenheiro Civil</h3>
               </div>
               
-              <div className="space-y-8 text-xl md:text-2xl text-muted-foreground leading-relaxed text-justify font-medium">
+              <div className="space-y-8 text-xl md:text-2xl text-white/80 leading-relaxed text-justify font-medium">
                 <p className="first-letter:text-7xl first-letter:font-black first-letter:text-primary first-letter:mr-3 first-letter:float-left">
                   Minha vida profissional começou cedo, enfrentando os desafios do mercado real, onde iniciei trabalhando na <span className="text-white font-black border-b-2 border-primary/30">Santa Efigênia (ambulante)</span>. Essa base foi fundamental para desenvolver o dinamismo e a visão prática que carrego hoje.
                 </p>
@@ -54,7 +54,7 @@ export default function AboutSection() {
                     <Ruler size={200} />
                   </div>
                   <h4 className="text-primary font-black uppercase text-xs tracking-[0.4em] mb-6">Determinação e Foco</h4>
-                  <p className="relative z-10">
+                  <p className="relative z-10 text-white/90">
                     Em <span className="text-white font-bold">2015</span> iniciei o Curso de Engenharia Civil. Faltando apenas 1 ano para concluir, precisei trancar a faculdade. No <span className="text-primary font-black">segundo semestre de 2025</span> retornei com força total e me formarei em <span className="text-white font-black">2026</span>. Atualmente, trabalho de forma autônoma através do <span className="text-white font-black italic">Mercado Livre</span>, mantendo meu compromisso com a gestão enquanto finalizo minha graduação.
                   </p>
                 </div>

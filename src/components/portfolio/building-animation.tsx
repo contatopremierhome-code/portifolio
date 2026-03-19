@@ -50,7 +50,6 @@ export default function BuildingAnimation() {
           
           {/* Visual Building Simulation */}
           <div className="relative flex flex-col-reverse items-center gap-4 py-20 reveal">
-            {/* Crane Graphic - Simulated with borders */}
             <div className="absolute -top-40 right-0 w-full h-full pointer-events-none opacity-10 animate-float">
               <div className="w-2 h-[150vh] bg-primary/40 absolute left-1/2"></div>
               <div className="h-2 w-full bg-primary/40 absolute top-20"></div>
@@ -70,13 +69,11 @@ export default function BuildingAnimation() {
                   <div className="text-primary transform group-hover:scale-125 transition-transform duration-500">{step.icon}</div>
                   <span className="text-xs font-black text-white uppercase tracking-[0.2em]">{step.title}</span>
                 </div>
-                {/* Structural Ribs */}
                 <div className="absolute top-0 left-10 w-px h-full bg-white/5 group-hover:bg-primary/20 transition-colors"></div>
                 <div className="absolute top-0 right-10 w-px h-full bg-white/5 group-hover:bg-primary/20 transition-colors"></div>
               </div>
             ))}
 
-            {/* Foundation Base */}
             <div className="w-full max-w-[450px] h-16 bg-white/10 border-4 border-white/5 rounded-t-[3rem] reveal shadow-[0_-20px_50px_rgba(255,255,255,0.05)]"></div>
           </div>
 
@@ -94,7 +91,7 @@ export default function BuildingAnimation() {
                     <h3 className="text-2xl font-black text-white uppercase italic group-hover:text-primary transition-colors">{step.title}</h3>
                     <span className="text-xs bg-primary/20 text-primary px-4 py-1.5 rounded-full font-black tracking-widest border border-primary/30">{step.year}</span>
                   </div>
-                  <p className="text-muted-foreground text-lg leading-relaxed font-medium">{step.desc}</p>
+                  <p className="text-white/80 text-lg leading-relaxed font-medium">{step.desc}</p>
                 </CardContent>
               </Card>
             ))}

@@ -87,7 +87,7 @@ export default function TimelineSection() {
                     </div>
                     
                     <h3 className="text-2xl md:text-3xl font-black text-white mb-4 group-hover:text-primary transition-colors uppercase italic">{step.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-lg font-medium">{step.description}</p>
+                    <p className="text-white/80 leading-relaxed text-lg font-medium">{step.description}</p>
                   </div>
                 </div>
 
