@@ -27,7 +27,7 @@ export default function HeroSection() {
           <div className="relative h-56 w-52 md:h-72 md:w-64 rounded-3xl border-2 border-white/10 p-1 bg-card/50 backdrop-blur-md overflow-hidden transform group-hover:rotate-y-6 transition-transform duration-500 shadow-2xl">
             <div className="relative h-full w-full rounded-2xl overflow-hidden">
               <Image
-                src="https://imgur.com/J5gtnyg.jpg"
+                src="https://i.imgur.com/J5gtnyg.jpg"
                 alt="Jeovane de Oliveira Costa"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -67,19 +67,31 @@ export default function HeroSection() {
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
-            <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+            <div 
+              className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
+              onClick={() => playSound('click')}
+            >
               <MapPin className="h-5 w-5 text-primary" />
               <span className="text-sm font-bold text-white/90">Campos Elíseos - São Paulo SP</span>
             </div>
-            <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+            <div 
+              className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
+              onClick={() => playSound('click')}
+            >
               <GraduationCap className="h-5 w-5 text-primary" />
               <span className="text-sm font-bold text-white/90">UNINOVE</span>
             </div>
-            <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+            <div 
+              className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
+              onClick={() => playSound('click')}
+            >
               <User className="h-5 w-5 text-primary" />
               <span className="text-sm font-bold text-white/90">29 Anos</span>
             </div>
-            <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+            <div 
+              className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
+              onClick={() => playSound('click')}
+            >
               <Milestone className="h-5 w-5 text-primary" />
               <span className="text-sm font-bold text-white/90">9° Semestre</span>
             </div>

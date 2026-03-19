@@ -10,8 +10,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useAudio } from "@/hooks/use-audio";
 
 const items = [
+  {
+    title: "Minha Jornada",
+    category: "Pessoal",
+    image: "https://i.imgur.com/G1IMRC2.jpg",
+    description: "Foco total no desenvolvimento técnico e prático."
+  },
   {
     title: "Projetos AutoCAD",
     category: "Planta Técnica",
@@ -25,12 +32,6 @@ const items = [
     description: "Controle de cronograma e execução de campo."
   },
   {
-    title: "Certificado Revit",
-    category: "Formação",
-    image: "https://picsum.photos/seed/cert1/800/600",
-    description: "Especialização em Modelagem BIM."
-  },
-  {
     title: "Logística Mercado Livre",
     category: "Experiência",
     image: "https://picsum.photos/seed/logis2/800/600",
@@ -39,6 +40,8 @@ const items = [
 ];
 
 export default function ProjectsCarousel() {
+  const { playSound } = useAudio();
+
   return (
     <section id="projects" className="py-32 bg-white/5">
       <div className="container mx-auto px-4 reveal">
@@ -54,7 +57,10 @@ export default function ProjectsCarousel() {
           <CarouselContent>
             {items.map((item, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 p-4">
-                <Card className="glass-card h-full overflow-hidden group">
+                <Card 
+                  className="glass-card h-full overflow-hidden group cursor-pointer"
+                  onClick={() => playSound('click')}
+                >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
                       src={item.image}
@@ -79,8 +85,14 @@ export default function ProjectsCarousel() {
             ))}
           </CarouselContent>
           <div className="hidden md:block">
-            <CarouselPrevious className="bg-white/5 border-white/10 text-white" />
-            <CarouselNext className="bg-white/5 border-white/10 text-white" />
+            <CarouselPrevious 
+              className="bg-white/5 border-white/10 text-white" 
+              onClick={() => playSound('click')}
+            />
+            <CarouselNext 
+              className="bg-white/5 border-white/10 text-white" 
+              onClick={() => playSound('click')}
+            />
           </div>
         </Carousel>
       </div>

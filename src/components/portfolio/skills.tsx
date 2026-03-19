@@ -22,7 +22,7 @@ const skills = [
   },
   { 
     name: "Revit (BIM)", 
-    level: "Intermediário", 
+    level: "Básico/Intermediário", 
     color: "#0696D7", 
     class: "glow-revit",
     logo: "https://cdn.simpleicons.org/autodeskrevit/0696D7",
@@ -30,7 +30,7 @@ const skills = [
   },
   { 
     name: "MS-Project", 
-    level: "Intermediário", 
+    level: "Básico/Intermediário", 
     color: "#31752F", 
     class: "glow-msproject",
     logo: "https://cdn.simpleicons.org/microsoft/31752F",
