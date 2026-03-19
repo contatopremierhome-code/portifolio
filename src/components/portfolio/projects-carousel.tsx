@@ -14,10 +14,10 @@ import { useAudio } from "@/hooks/use-audio";
 
 const items = [
   {
-    title: "Minha Jornada",
-    category: "Pessoal",
+    title: "Projeto Integrador",
+    category: "Acadêmico",
     image: "https://i.imgur.com/G1IMRC2.jpg",
-    description: "Foco total no desenvolvimento técnico e prático."
+    description: "Desenvolvimento técnico multidisciplinar. PDF disponível em breve."
   },
   {
     title: "Projetos AutoCAD",
