@@ -10,6 +10,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { useAudio } from "@/hooks/use-audio";
 
 const items = [
@@ -18,7 +24,7 @@ const items = [
     category: "Acadêmico",
     image: "https://i.imgur.com/G1IMRC2.jpg",
     description: "Desenvolvimento técnico multidisciplinar do semestre passado. Clique para visualizar o PDF completo.",
-    link: "https://drive.google.com/file/d/1rlikXIKjR4LoG6p62k_ZfJpquRQye_fy/view?usp=sharing"
+    link: "https://drive.google.com/file/d/1rlikXIKjR4LoG6p62k_ZfJpquRQye_fy/preview"
   },
   {
     title: "Projetos AutoCAD",
@@ -42,6 +48,14 @@ const items = [
 
 export default function ProjectsCarousel() {
   const { playSound } = useAudio();
+  const [selectedPdf, setSelectedPdf] = React.useState<string | null>(null);
+
+  const handleCardClick = (item: typeof items[0]) => {
+    playSound('click');
+    if (item.link) {
+      setSelectedPdf(item.link);
+    }
+  };
 
   return (
     <section id="projects" className="py-32 bg-white/5">
@@ -60,12 +74,7 @@ export default function ProjectsCarousel() {
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 p-4">
                 <Card 
                   className="glass-card h-full overflow-hidden group cursor-pointer"
-                  onClick={() => {
-                    playSound('click');
-                    if (item.link) {
-                      window.open(item.link, '_blank');
-                    }
-                  }}
+                  onClick={() => handleCardClick(item)}
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
@@ -101,6 +110,24 @@ export default function ProjectsCarousel() {
             />
           </div>
         </Carousel>
+
+        {/* Modal de Visualização de PDF */}
+        <Dialog open={!!selectedPdf} onOpenChange={() => setSelectedPdf(null)}>
+          <DialogContent className="max-w-5xl h-[90vh] p-0 bg-black/90 border-white/10 overflow-hidden">
+            <DialogHeader className="p-4 border-b border-white/10">
+              <DialogTitle className="text-white uppercase tracking-widest font-black italic">
+                Visualização Técnica: Projeto Integrador
+              </DialogTitle>
+            </DialogHeader>
+            {selectedPdf && (
+              <iframe
+                src={selectedPdf}
+                className="w-full h-full border-none"
+                allow="autoplay"
+              />
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
