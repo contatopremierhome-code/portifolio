@@ -2,6 +2,7 @@
 
 import HeroSection from '@/components/portfolio/hero';
 import AboutSection from '@/components/portfolio/about';
+import VideoSection from '@/components/portfolio/video-section';
 import TimelineSection from '@/components/portfolio/timeline';
 import SkillsSection from '@/components/portfolio/skills';
 import ProjectsCarousel from '@/components/portfolio/projects-carousel';
@@ -18,6 +19,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
+        <VideoSection />
         <TimelineSection />
         <SkillsSection />
         <ProjectsCarousel />
