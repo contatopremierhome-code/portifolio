@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, MapPin, GraduationCap, HardHat, Ruler } from 'lucide-react';
+import { MapPin, GraduationCap, HardHat, Ruler } from 'lucide-react';
 import Link from 'next/link';
 import { useAudio } from '@/hooks/use-audio';
 
@@ -53,7 +53,7 @@ export default function HeroSection() {
               <span className="absolute -bottom-2 left-0 w-full h-2 bg-primary/20 rounded-full blur-sm"></span>
             </span>
           </h1>
-          <p className="text-2xl md:text-3xl text-muted-foreground font-light tracking-widest uppercase">
+          <p className="text-2xl md:text-3xl text-white/90 font-light tracking-widest uppercase">
             Estudante de Engenharia Civil
           </p>
 
@@ -63,7 +63,7 @@ export default function HeroSection() {
             <p className="text-white text-xl font-bold leading-tight italic">
               "Dedicado, Analítico e Orientado a Resultados."
             </p>
-            <p className="text-muted-foreground mt-4 leading-relaxed text-lg">
+            <p className="text-white/80 mt-4 leading-relaxed text-lg">
               Mais do que um estudante, sou um profissional formado pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela capacidade de autogestão.
             </p>
           </div>
@@ -71,11 +71,11 @@ export default function HeroSection() {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
             <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
               <MapPin className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/80">São Paulo - SP</span>
+              <span className="text-sm font-bold text-white/90">São Paulo - SP</span>
             </div>
             <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
               <GraduationCap className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/80">UNINOVE | 29 Anos</span>
+              <span className="text-sm font-bold text-white/90">UNINOVE | 29 Anos</span>
             </div>
           </div>
         </div>
@@ -88,7 +88,14 @@ export default function HeroSection() {
             onClick={() => playSound('click')}
           >
             <Button size="lg" className="w-full bg-[#25D366] text-white hover:bg-[#22c55e] h-20 text-xl rounded-3xl shadow-[0_20px_50px_rgba(37,211,102,0.2)] transition-all hover:scale-105 active:scale-95 font-black uppercase tracking-tighter animate-pulse-whatsapp border-none">
-              <MessageCircle className="mr-3 h-8 w-8 fill-current" />
+              <div className="mr-3 h-10 w-10 relative">
+                <Image 
+                  src="https://imgur.com/0LWUXuP.png" 
+                  alt="WhatsApp Icon" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
               Contratar Agora
             </Button>
           </Link>
