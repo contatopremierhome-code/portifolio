@@ -5,6 +5,7 @@ import AboutSection from '@/components/portfolio/about';
 import VideoSection from '@/components/portfolio/video-section';
 import TimelineSection from '@/components/portfolio/timeline';
 import SkillsSection from '@/components/portfolio/skills';
+import SoftSkillsSection from '@/components/portfolio/soft-skills';
 import ProjectsCarousel from '@/components/portfolio/projects-carousel';
 import ContactSection from '@/components/portfolio/contact';
 import ParticleBackground from '@/components/portfolio/particle-background';
@@ -22,6 +23,7 @@ export default function Home() {
         <VideoSection />
         <TimelineSection />
         <SkillsSection />
+        <SoftSkillsSection />
         <ProjectsCarousel />
         <ContactSection />
       </main>
