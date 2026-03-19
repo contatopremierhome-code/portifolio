@@ -2,21 +2,21 @@
   "placeholderImages": [
     {
       "id": "profile-photo",
-      "description": "Foto de perfil profissional",
-      "imageUrl": "https://picsum.photos/seed/engineer/400/400",
-      "imageHint": "professional man"
+      "description": "Foto de perfil do engenheiro",
+      "imageUrl": "https://imgur.com/J5gtnyg.jpg",
+      "imageHint": "professional engineer"
     },
     {
-      "id": "project-autocad",
-      "description": "Planta baixa desenvolvida em AutoCAD",
-      "imageUrl": "https://picsum.photos/seed/autocad/800/600",
-      "imageHint": "blueprint architecture"
+      "id": "blueprint",
+      "description": "Planta técnica de engenharia",
+      "imageUrl": "https://picsum.photos/seed/blueprint/800/600",
+      "imageHint": "technical drawing"
     },
     {
-      "id": "project-logistics",
-      "description": "Gestão de operações e logística",
+      "id": "logistics",
+      "description": "Operação logística moderna",
       "imageUrl": "https://picsum.photos/seed/logistics/800/600",
-      "imageHint": "warehouse logistics"
+      "imageHint": "warehouse management"
     }
   ]
 }

@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Portfólio | Estagiário de Engenharia Civil',
+  title: 'Engenharia Civil | Portfólio Profissional',
   description: 'Estudante de Engenharia Civil da Universidade Nove de Julho focado em consultoria e gestão de obras.',
 };
 
@@ -17,26 +17,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body className={cn('antialiased')}>
         {children}
         <Toaster />
-        <Link
-          href="https://wa.me/5511919854675?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade."
-          target="_blank"
+        <Link 
+          href="https://wa.me/5511919854675?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." 
+          target="_blank" 
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50"
+          className="fixed bottom-8 right-8 z-50 group"
         >
-          <Button
-            className="h-14 w-14 rounded-full bg-accent text-accent-foreground shadow-2xl hover:bg-accent/90 transform transition-all duration-300 hover:scale-110 animate-float"
+          <div className="absolute -inset-2 bg-accent blur-xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
+          <Button 
+            className="h-16 w-16 rounded-full bg-accent text-accent-foreground shadow-2xl hover:bg-accent/90 transform transition-all duration-300 hover:scale-110 active:scale-95 animate-float"
             aria-label="Contratar para Estágio (WhatsApp)"
           >
-            <MessageCircle className="h-7 w-7" />
+            <MessageCircle className="h-8 w-8" />
           </Button>
         </Link>
       </body>
