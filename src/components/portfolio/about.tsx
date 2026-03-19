@@ -24,24 +24,20 @@ export default function AboutSection() {
               
               <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed text-justify">
                 <p>
-                  Minha vida profissional começou cedo, enfrentando os desafios do mercado real na Santa Efigênia. Essa base foi fundamental para desenvolver o dinamismo e a visão prática que carrego hoje.
+                  Minha vida profissional começou cedo, enfrentando os desafios do mercado real, onde iniciei trabalhando na <span className="text-white font-bold">Santa Efigênia (ambulante)</span>. Essa base foi fundamental para desenvolver o dinamismo e a visão prática que carrego hoje.
                 </p>
                 
                 <p>
-                  Em <span className="text-white font-bold">2014</span>, descobri minha afinidade com a precisão técnica ao iniciar o curso de AutoCAD no SENAC. Meu desempenho foi tão destacado que, antes mesmo de concluir a formação, recebi o convite do meu professor para integrar a equipe de seu escritório técnico. Essa experiência validou minha capacidade de entrega sob padrões profissionais rigorosos.
-                </p>
-
-                <p>
-                  A vida me apresentou novos desafios quando precisei priorizar o apoio aos negócios da minha família. Demonstrei adaptabilidade e espírito empreendedor ao atuar de forma autônoma no Mercado Livre, onde aprimorei competências de logística, atendimento e gestão financeira que são vitais para qualquer obra eficiente.
+                  Em <span className="text-white font-bold">2014</span>, descobri meu gosto para engenharia ao iniciar o curso de AutoCAD no SENAC. Meu desempenho foi tão destacado que, antes mesmo de concluir a formação, recebi o convite do meu professor para integrar a sua empresa. Essa experiência foi de muito importante e me ajudou na escolha do curso que iria fazer no ano seguinte.
                 </p>
 
                 <div className="p-8 rounded-2xl bg-primary/5 border-l-4 border-primary mt-10">
                   <h4 className="text-white font-black uppercase text-sm tracking-widest mb-4">A Engenharia no Sangue</h4>
                   <p>
-                    Iniciei meu sonho na graduação em <span className="text-white font-bold">2015</span>, mas em <span className="text-white font-bold">2018</span> precisei fazer uma pausa estratégica por questões financeiras — um intervalo que apenas aumentou minha determinação. 
+                    Em <span className="text-white font-bold">2015</span> iniciei o Curso de Engenharia Civil onde estudei até <span className="text-white font-bold">2018</span>. Faltando apenas 1 ano para concluir, precisei trancar a faculdade por motivos de força maior.
                   </p>
                   <p className="mt-4">
-                    Em <span className="text-white font-bold">2025</span>, retornei com foco total à <span className="text-primary font-bold">UNINOVE</span>, e hoje sigo em ritmo acelerado para concluir minha formação em <span className="text-white font-bold">2026</span>. Estou pronto para aplicar essa bagagem de vida e técnica em um estágio que valorize quem sabe, de fato, o valor do trabalho duro.
+                    No <span className="text-primary font-bold">segundo semestre de 2025</span> tive a oportunidade de voltar a estudar Engenharia Civil e me formarei em <span className="text-white font-bold">2026</span>. Atualmente, trabalho de forma autônoma através da plataforma do <span className="text-white font-bold">Mercado Livre</span>, mantendo meu compromisso com a gestão e resultados enquanto finalizo minha graduação.
                   </p>
                 </div>
               </div>
