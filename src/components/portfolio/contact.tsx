@@ -1,43 +1,49 @@
-import { Mail, MapPin } from 'lucide-react';
+'use client';
+
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactSection() {
   return (
-    <footer className="py-32 bg-card border-t border-border">
-      <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto space-y-12">
+    <footer className="py-32 relative border-t border-white/10">
+      <div className="container mx-auto px-4 reveal text-center">
+        <div className="max-w-3xl mx-auto space-y-12">
           
-          <div className="text-center space-y-6">
-            <h2 className="text-4xl font-bold text-white">Contato Direto</h2>
+          <div className="space-y-6">
+            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase">Contato Direto</h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Estou aberto a oportunidades de estágio em escritórios de engenharia, consultoria e gestão de obras.
+              Pronto para somar na sua equipe com eficiência e domínio técnico.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex items-center gap-4 p-6 rounded-2xl bg-muted/30 border border-border">
-              <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-8 rounded-3xl glass-card transition-transform hover:-translate-y-2 group">
+              <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
                 <Mail />
               </div>
-              <div>
-                <p className="text-sm text-muted-foreground">E-mail Profissional</p>
-                <p className="font-semibold text-white">contato@engcivil.pro</p>
-              </div>
+              <p className="text-xs text-muted-foreground uppercase font-bold tracking-widest mb-1">E-mail</p>
+              <p className="font-bold text-white break-all">jeovane.costa@exemplo.com</p>
             </div>
             
-            <div className="flex items-center gap-4 p-6 rounded-2xl bg-muted/30 border border-border">
-              <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+            <div className="p-8 rounded-3xl glass-card transition-transform hover:-translate-y-2 group">
+              <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                <Phone />
+              </div>
+              <p className="text-xs text-muted-foreground uppercase font-bold tracking-widest mb-1">WhatsApp</p>
+              <p className="font-bold text-white">(11) 91985-4675</p>
+            </div>
+
+            <div className="p-8 rounded-3xl glass-card transition-transform hover:-translate-y-2 group">
+              <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
                 <MapPin />
               </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Localização</p>
-                <p className="font-semibold text-white">São Paulo - SP</p>
-              </div>
+              <p className="text-xs text-muted-foreground uppercase font-bold tracking-widest mb-1">Localização</p>
+              <p className="font-bold text-white">São Paulo - SP</p>
             </div>
           </div>
         </div>
 
-        <div className="mt-32 pt-12 border-t border-border/30 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Portfólio Engenharia Civil | Universidade Nove de Julho.</p>
+        <div className="mt-32 pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.5em] text-muted-foreground font-bold">
+          <p>© {new Date().getFullYear()} Jeovane de Oliveira Costa | Engenharia Civil UNINOVE.</p>
         </div>
       </div>
     </footer>

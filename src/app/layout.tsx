@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Engenharia Civil | Portfólio Profissional',
-  description: 'Estudante de Engenharia Civil da Universidade Nove de Julho focado em consultoria e gestão de obras.',
+  title: 'Jeovane Costa | Engenharia Civil',
+  description: 'Portfólio Profissional de Jeovane de Oliveira Costa - Estudante de Engenharia Civil focado em consultoria e gestão de obras.',
 };
 
 export default function RootLayout({
@@ -21,23 +21,24 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </head>
-      <body className={cn('antialiased')}>
+      <body className={cn('antialiased bg-[#121212]')}>
         {children}
         <Toaster />
+        
+        {/* Floating WhatsApp Pulsing Button */}
         <Link 
-          href="https://wa.me/5511919854675?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." 
+          href="https://wa.me/5511919854675" 
           target="_blank" 
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 z-50 group"
         >
-          <div className="absolute -inset-2 bg-accent blur-xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
           <Button 
-            className="h-16 w-16 rounded-full bg-accent text-accent-foreground shadow-2xl hover:bg-accent/90 transform transition-all duration-300 hover:scale-110 active:scale-95 animate-float"
+            className="h-16 w-16 rounded-full bg-[#25D366] text-white shadow-2xl hover:bg-[#22c55e] transition-all duration-300 hover:scale-110 active:scale-95 animate-pulse-whatsapp border-none"
             aria-label="Contratar para Estágio (WhatsApp)"
           >
-            <MessageCircle className="h-8 w-8" />
+            <MessageCircle className="h-8 w-8 fill-current" />
           </Button>
         </Link>
       </body>

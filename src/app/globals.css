@@ -18,12 +18,10 @@
     --muted-foreground: 240 5% 65%;
     --accent: 142 71% 45%;
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 0 0% 98%;
     --border: 240 4% 16%;
     --input: 240 4% 16%;
     --ring: 217 91% 60%;
-    --radius: 0.75rem;
+    --radius: 1rem;
   }
 }
 
@@ -32,25 +30,37 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-sans selection:bg-primary/30;
+    @apply bg-[#121212] text-foreground font-sans selection:bg-primary/30;
     font-family: 'Inter', sans-serif;
   }
 }
 
-.bg-industrial-gradient {
-  background: radial-gradient(circle at 50% -20%, hsl(var(--primary) / 0.15), transparent 70%);
-}
-
 .glass-card {
-  @apply bg-card/50 backdrop-blur-md border border-white/5;
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
 }
 
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+@keyframes pulse-whatsapp {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
 }
 
-.animate-float {
-  animation: float 4s ease-in-out infinite;
+.animate-pulse-whatsapp {
+  animation: pulse-whatsapp 2s infinite;
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glow-autocad:hover { filter: drop-shadow(0 0 8px #FF0000); transform: scale(1.1); }
+.glow-excel:hover { filter: drop-shadow(0 0 8px #217346); transform: scale(1.1); }
+.glow-revit:hover { filter: drop-shadow(0 0 8px #0696D7); transform: scale(1.1); }
+.glow-msproject:hover { filter: drop-shadow(0 0 8px #31752F); transform: scale(1.1); }

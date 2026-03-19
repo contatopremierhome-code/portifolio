@@ -1,19 +1,24 @@
+'use client';
+
 import HeroSection from '@/components/portfolio/hero';
 import AboutSection from '@/components/portfolio/about';
 import SkillsSection from '@/components/portfolio/skills';
-import ExperienceSection from '@/components/portfolio/experience';
-import CertificationsSection from '@/components/portfolio/certifications';
+import ProjectsCarousel from '@/components/portfolio/projects-carousel';
 import ContactSection from '@/components/portfolio/contact';
+import ParticleBackground from '@/components/portfolio/particle-background';
+import { useReveal } from '@/hooks/use-reveal';
 
 export default function Home() {
+  useReveal(); // Ativa as animações de scroll
+
   return (
-    <div className="flex min-h-screen flex-col bg-background text-foreground">
+    <div className="flex min-h-screen flex-col bg-[#121212] text-foreground selection:bg-primary/30">
+      <ParticleBackground />
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
         <SkillsSection />
-        <ExperienceSection />
-        <CertificationsSection />
+        <ProjectsCarousel />
         <ContactSection />
       </main>
     </div>
