@@ -17,7 +17,8 @@ const items = [
     title: "Projeto Integrador",
     category: "Acadêmico",
     image: "https://i.imgur.com/G1IMRC2.jpg",
-    description: "Desenvolvimento técnico multidisciplinar. PDF disponível em breve."
+    description: "Desenvolvimento técnico multidisciplinar do semestre passado. Clique para visualizar o PDF completo.",
+    link: "https://drive.google.com/file/d/1rlikXIKjR4LoG6p62k_ZfJpquRQye_fy/view?usp=sharing"
   },
   {
     title: "Projetos AutoCAD",
@@ -59,7 +60,12 @@ export default function ProjectsCarousel() {
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 p-4">
                 <Card 
                   className="glass-card h-full overflow-hidden group cursor-pointer"
-                  onClick={() => playSound('click')}
+                  onClick={() => {
+                    playSound('click');
+                    if (item.link) {
+                      window.open(item.link, '_blank');
+                    }
+                  }}
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
