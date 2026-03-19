@@ -20,7 +20,7 @@ export default function AboutSection() {
 
           <Card className="glass-card overflow-hidden">
             <CardContent className="p-10 md:p-20 relative space-y-8">
-              <h3 className="text-2xl md:text-3xl text-white font-bold tracking-tight">De Aprendiz a Futuro Engenheiro</h3>
+              <h3 className="text-2xl md:text-3xl text-white font-bold tracking-tight">Futuro Engenheiro Civil</h3>
               
               <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed text-justify">
                 <p>
