@@ -34,7 +34,7 @@ export default function HeroSection() {
             JEOVANE <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">COSTA</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-medium max-w-2xl mx-auto">
-            Estudante de Engenharia Civil | Consultoria e Gestão de Obras
+            Estudante de Engenharia Civil
           </p>
 
           {/* Resumo de Impacto */}
