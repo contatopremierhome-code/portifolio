@@ -109,27 +109,17 @@ export default function ProjectsCarousel() {
           </div>
         </Carousel>
 
-        {/* Modal de Visualização de PDF Otimizado */}
+        {/* Modal de Visualização de PDF Otimizado - Ocupando 80% */}
         <Dialog open={!!selectedPdf} onOpenChange={() => setSelectedPdf(null)}>
-          <DialogContent className="max-w-[95vw] md:max-w-6xl h-[90vh] p-0 bg-black border-white/10 overflow-hidden">
+          <DialogContent className="max-w-[80vw] w-[80vw] h-[85vh] p-0 bg-black border-white/10 overflow-hidden">
             {selectedPdf && (
-              <div className="w-full h-full flex flex-col">
+              <div className="w-full h-full">
                 <iframe
                   src={selectedPdf}
-                  className="w-full flex-1 border-none"
+                  className="w-full h-full border-none"
                   allow="autoplay"
                   title="Visualização de PDF"
                 />
-                {/* Minimal Footer for status */}
-                <div className="bg-black/80 px-4 py-2 flex justify-between items-center border-t border-white/5">
-                  <span className="text-[10px] text-white/40 uppercase font-black tracking-widest">Documento Técnico: Projeto Integrador</span>
-                  <button 
-                    onClick={() => setSelectedPdf(null)}
-                    className="text-[10px] text-primary hover:text-white font-black uppercase transition-colors"
-                  >
-                    Fechar Visualização
-                  </button>
-                </div>
               </div>
             )}
           </DialogContent>
