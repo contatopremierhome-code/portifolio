@@ -1,9 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { MapPin, GraduationCap, HardHat, Ruler } from 'lucide-react';
-import Link from 'next/link';
+import { MapPin, GraduationCap, User, Milestone, HardHat, Ruler } from 'lucide-react';
 import { useAudio } from '@/hooks/use-audio';
 
 export default function HeroSection() {
@@ -46,8 +44,8 @@ export default function HeroSection() {
         </div>
 
         <div className="space-y-6 animate-construct" style={{ animationDelay: '0.2s' }}>
-          <h1 className="text-6xl md:text-9xl font-black tracking-tighter text-white leading-none">
-            JEOVANE <br/> 
+          <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white leading-none">
+            JEOVANE DE OLIVEIRA <br/> 
             <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
               COSTA
               <span className="absolute -bottom-2 left-0 w-full h-2 bg-primary/20 rounded-full blur-sm"></span>
@@ -64,41 +62,28 @@ export default function HeroSection() {
               "Dedicado, Analítico e Orientado a Resultados."
             </p>
             <p className="text-white/80 mt-4 leading-relaxed text-lg">
-              Mais do que um estudante, sou um profissional formado pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela capacidade de autogestão.
+              Mais do que um estudante de Engenharia Civil, sou um profissional formado pela prática e pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela capacidade de autogestão.
             </p>
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
             <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
               <MapPin className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/90">São Paulo - SP</span>
+              <span className="text-sm font-bold text-white/90">Campos Elíseos - São Paulo SP</span>
             </div>
             <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
               <GraduationCap className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/90">UNINOVE | 29 Anos</span>
+              <span className="text-sm font-bold text-white/90">UNINOVE</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+              <User className="h-5 w-5 text-primary" />
+              <span className="text-sm font-bold text-white/90">29 Anos</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
+              <Milestone className="h-5 w-5 text-primary" />
+              <span className="text-sm font-bold text-white/90">9° Semestre</span>
             </div>
           </div>
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-6 w-full max-w-md justify-center pt-8 animate-construct" style={{ animationDelay: '0.4s' }}>
-          <Link 
-            href="https://wa.me/5511919854675?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." 
-            target="_blank" 
-            className="flex-1"
-            onClick={() => playSound('click')}
-          >
-            <Button size="lg" className="w-full bg-[#25D366] text-white hover:bg-[#22c55e] h-20 text-xl rounded-3xl shadow-[0_20px_50px_rgba(37,211,102,0.2)] transition-all hover:scale-105 active:scale-95 font-black uppercase tracking-tighter animate-pulse-whatsapp border-none">
-              <div className="mr-3 h-10 w-10 relative">
-                <Image 
-                  src="https://imgur.com/0LWUXuP.png" 
-                  alt="WhatsApp Icon" 
-                  fill 
-                  className="object-contain"
-                />
-              </div>
-              Contratar Agora
-            </Button>
-          </Link>
         </div>
       </div>
 

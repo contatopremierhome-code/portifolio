@@ -36,8 +36,23 @@ export default function BuildingAnimation() {
   const { playSound } = useAudio();
 
   return (
-    <section className="py-40 relative blueprint-grid overflow-hidden">
-      <div className="container mx-auto px-4">
+    <section className="py-40 relative overflow-hidden bg-black">
+      {/* Video Background Imersivo */}
+      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
+        <video 
+          className="w-full h-full object-cover"
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          poster="https://picsum.photos/seed/const/1920/1080"
+        >
+          <source src="https://i.imgur.com/6fWIdJm.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#121212] via-transparent to-[#121212]"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-32 reveal">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
             Canteiro de Obras Digital
