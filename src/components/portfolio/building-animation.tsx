@@ -8,27 +8,27 @@ import { useAudio } from "@/hooks/use-audio";
 const buildingSteps = [
   {
     title: "Fundação Comercial",
-    desc: "Início na Santa Efigênia: Aprendizado de resiliência, negociação e agilidade em ambiente de alta pressão.",
+    desc: "Início na Santa Efigênia (ambulante): Base fundamental para o desenvolvimento de resiliência e visão prática de mercado.",
     icon: <Ruler className="h-8 w-8" />,
     year: "2014"
   },
   {
     title: "Estrutura Projetual",
-    desc: "Domínio de AutoCAD e entrada em escritório técnico. Onde a teoria encontrou a prática pela primeira vez.",
+    desc: "Especialização em AutoCAD no SENAC e atuação em escritório técnico, validando a capacidade de entrega profissional.",
     icon: <Hammer className="h-8 w-8" />,
-    year: "2015"
+    year: "2014-2015"
   },
   {
     title: "Gestão Logística",
-    desc: "Experiência autônoma no Mercado Livre: Gestão de fluxos, estoques e rigor absoluto com prazos de entrega.",
+    desc: "Atuação autônoma no Mercado Livre: Aprimoramento de competências em logística e gestão financeira estratégica.",
     icon: <Building2 className="h-8 w-8" />,
     year: "2019-2024"
   },
   {
-    title: "Acabamento BIM",
-    desc: "Retomada acadêmica focada em Revit e MS-Project. Preparação final para o mercado de gestão de obras.",
+    title: "Retomada UNINOVE",
+    desc: "Retorno estratégico aos estudos no segundo semestre de 2025, com foco total na formação como Engenheiro Civil em 2026.",
     icon: <HardHat className="h-8 w-8" />,
-    year: "2025"
+    year: "2025-2026"
   }
 ];
 
