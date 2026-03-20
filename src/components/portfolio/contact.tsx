@@ -8,27 +8,27 @@ export default function ContactSection() {
   const { playSound } = useAudio();
 
   return (
-    <footer id="contact" className="py-20 md:py-40 relative border-t border-white/10 blueprint-grid bg-black/80">
+    <footer id="contact" className="py-20 md:py-40 relative border-t border-white/10 blueprint-grid bg-black/90">
       <div className="container mx-auto px-4 reveal text-center">
         <div className="max-w-4xl mx-auto space-y-20">
           
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
-              Contato
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-white/20 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
+              Contato Profissional
             </div>
-            <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter uppercase italic leading-none">CONTATO</h2>
+            <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter uppercase italic leading-none drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">CONTATO</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <a 
               href="mailto:jeovanede@hotmail.com"
-              className="p-12 rounded-[2.5rem] md:rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer block border-white/5"
+              className="p-10 md:p-12 rounded-[2rem] md:rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer block border-white/10"
               onClick={() => playSound('click')}
             >
-              <div className="h-16 w-16 md:h-20 md:w-20 rounded-[1.5rem] md:rounded-[2rem] bg-primary/10 flex items-center justify-center text-primary mx-auto mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-2xl group-hover:rotate-12">
+              <div className="h-16 w-16 md:h-20 md:w-20 rounded-[1.5rem] md:rounded-[2rem] bg-primary flex items-center justify-center text-white mx-auto mb-8 group-hover:scale-110 transition-all duration-500 shadow-[0_0_30px_rgba(59,130,246,0.4)] group-hover:rotate-12">
                 <Mail size={32} />
               </div>
-              <p className="text-[10px] text-white/50 uppercase font-black tracking-[0.3em] mb-2">E-mail</p>
+              <p className="text-[10px] text-primary uppercase font-black tracking-[0.3em] mb-2">E-mail</p>
               <p className="font-black text-white text-base md:text-lg break-all">jeovanede@hotmail.com</p>
             </a>
             
@@ -36,10 +36,10 @@ export default function ContactSection() {
               href="https://wa.me/5511919854675?text=Olá%20Jeovane,%20vim%20através%20do%20seu%20Portifólio%20!" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-12 rounded-[2.5rem] md:rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer border-primary/30"
+              className="p-10 md:p-12 rounded-[2rem] md:rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer border-white/10"
               onClick={() => playSound('click')}
             >
-              <div className="h-16 w-16 md:h-20 md:w-20 rounded-[1.5rem] md:rounded-[2rem] bg-[#25D366]/10 flex items-center justify-center text-[#25D366] mx-auto mb-8 group-hover:bg-[#25D366] transition-all duration-500 shadow-2xl group-hover:rotate-12 overflow-hidden p-4">
+              <div className="h-16 w-16 md:h-20 md:w-20 rounded-[1.5rem] md:rounded-[2rem] bg-[#25D366] flex items-center justify-center text-white mx-auto mb-8 group-hover:scale-110 transition-all duration-500 shadow-[0_0_30px_rgba(37,211,102,0.4)] group-hover:rotate-12 overflow-hidden p-4">
                 <Image 
                   src="https://i.imgur.com/Hr6SCB8.png" 
                   alt="WhatsApp" 
@@ -48,18 +48,18 @@ export default function ContactSection() {
                   className="object-contain"
                 />
               </div>
-              <p className="text-[10px] text-white/50 uppercase font-black tracking-[0.3em] mb-2">WhatsApp</p>
+              <p className="text-[10px] text-[#25D366] uppercase font-black tracking-[0.3em] mb-2">WhatsApp</p>
               <p className="font-black text-white text-base md:text-lg">(11) 91985-4675</p>
             </a>
 
             <div 
-              className="p-12 rounded-[2.5rem] md:rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer border-white/5"
+              className="p-10 md:p-12 rounded-[2rem] md:rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer border-white/10"
               onClick={() => playSound('click')}
             >
-              <div className="h-16 w-16 md:h-20 md:w-20 rounded-[1.5rem] md:rounded-[2rem] bg-primary/10 flex items-center justify-center text-primary mx-auto mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-2xl group-hover:rotate-12">
+              <div className="h-16 w-16 md:h-20 md:w-20 rounded-[1.5rem] md:rounded-[2rem] bg-primary flex items-center justify-center text-white mx-auto mb-8 group-hover:scale-110 transition-all duration-500 shadow-[0_0_30px_rgba(59,130,246,0.4)] group-hover:rotate-12">
                 <MapPin size={32} />
               </div>
-              <p className="text-[10px] text-white/50 uppercase font-black tracking-[0.3em] mb-2">Local</p>
+              <p className="text-[10px] text-primary uppercase font-black tracking-[0.3em] mb-2">Local</p>
               <p className="font-black text-white text-base md:text-lg">São Paulo - SP</p>
             </div>
           </div>
