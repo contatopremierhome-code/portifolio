@@ -17,6 +17,8 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { useAudio } from "@/hooks/use-audio";
 
 const items = [
@@ -74,7 +76,7 @@ export default function ProjectsCarousel() {
             {items.map((item, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 p-4">
                 <Card 
-                  className="glass-card h-full overflow-hidden group cursor-pointer"
+                  className="glass-card h-full overflow-hidden group cursor-pointer flex flex-col"
                   onClick={() => handleCardClick(item)}
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
@@ -90,11 +92,20 @@ export default function ProjectsCarousel() {
                       </span>
                     </div>
                   </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                  <CardContent className="p-8 flex flex-col flex-1">
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors uppercase italic tracking-tighter">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-6">
                       {item.description}
                     </p>
+                    <div className="mt-auto pt-6 border-t border-white/5">
+                      <Button 
+                        variant="ghost" 
+                        className="w-full justify-between group-hover:bg-primary group-hover:text-white transition-all duration-500 text-[10px] font-black uppercase tracking-[0.2em] h-12 rounded-2xl border border-white/5"
+                      >
+                        Ver Projeto
+                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               </CarouselItem>
