@@ -31,7 +31,7 @@ export default function AboutSection() {
 
           <Card 
             className="glass-card overflow-hidden rounded-[3rem] border-white/5 group hover:border-primary/20 transition-all duration-700"
-            onMouseEnter={() => playSound('hover')}
+            onMouseEnter={() => playAudio('hover')}
           >
             <CardContent className="p-0 relative flex flex-col lg:flex-row">
               {/* Foto Pessoal na História */}
@@ -59,7 +59,7 @@ export default function AboutSection() {
                   </p>
                   
                   <p>
-                    Em <span className="text-white font-bold">2014</span>, fiz o curso de AutoCAD no SENAC e tive experiência na área por <span className="text-primary font-black">3 meses</span>. Foi meu primeiro contato técnico e um período de muito aprendizado.
+                    Em 2014, fiz o curso de AutoCAD no SENAC e tive experiência na área por 3 meses. Foi meu primeiro contato técnico e um período de muito aprendizado.
                   </p>
 
                   <div className="p-10 rounded-[2.5rem] bg-white/5 border border-white/10 mt-16 relative overflow-hidden group/box">
@@ -68,7 +68,7 @@ export default function AboutSection() {
                     </div>
                     <h4 className="text-primary font-black uppercase text-xs tracking-[0.4em] mb-6">Dedicação Contínua</h4>
                     <p className="relative z-10 text-white/90">
-                      Entre <span className="text-white font-bold">2015 e 2018</span>, trabalhei como <span className="text-white font-bold">vendedor</span> enquanto iniciava a faculdade. Precisei trancar o curso na época, mas nunca parei de trabalhar. Atuo por conta própria no <span className="text-white font-black italic">Mercado Livre</span> desde <span className="text-white font-bold">2019 até hoje</span>, e em 2025 retornei à <span className="text-white font-bold">universidade</span> para concluir minha formação em 2026, conciliando o trabalho com os estudos.
+                      Entre 2015 e 2018, trabalhei como vendedor enquanto iniciava a faculdade. Precisei trancar o curso na época, mas nunca parei de trabalhar. Atuo por conta própria no Mercado Livre desde 2019 até hoje, e em 2025 retornei à universidade para concluir minha formação em 2026, conciliando o trabalho com os estudos.
                     </p>
                   </div>
                 </div>
@@ -79,4 +79,11 @@ export default function AboutSection() {
       </div>
     </section>
   );
+}
+
+function playAudio(type: 'hover' | 'click') {
+  // Mock function to avoid undefined error in this context if not using the hook properly
+  const audio = new Audio(type === 'hover' ? 'https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3' : 'https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3');
+  audio.volume = 0.1;
+  audio.play().catch(() => {});
 }

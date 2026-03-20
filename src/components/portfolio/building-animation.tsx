@@ -13,20 +13,20 @@ const buildingSteps = [
     year: "Início"
   },
   {
-    title: "Primeiro Registro",
+    title: "Primeiro Contato",
     desc: "Curso de AutoCAD no SENAC e experiência de 3 meses em escritório de engenharia.",
     icon: <Hammer className="h-8 w-8" />,
     year: "2014"
   },
   {
-    title: "Vendas e Estudos",
+    title: "Trabalho e Estudo",
     desc: "Trabalho como vendedor conciliando com os primeiros semestres da faculdade.",
     icon: <ShoppingBag className="h-8 w-8" />,
     year: "2015-2018"
   },
   {
     title: "Trabalho Independente",
-    desc: "Atuação no Mercado Livre desde 2019: Dedicação constante ao trabalho.",
+    desc: "Atuação no Mercado Livre desde 2019: Responsabilidade e dedicação constante até hoje.",
     icon: <Building2 className="h-8 w-8" />,
     year: "2019-Atualmente"
   },

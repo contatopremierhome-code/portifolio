@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className="container relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto space-y-12">
         
         {/* Foto de Perfil Profissional */}
-        <div className="relative group perspective-1000 animate-construct">
+        <div className="relative group perspective-1000 animate-construct w-fit mx-auto">
           <div className="absolute -inset-2 bg-gradient-to-r from-primary via-blue-400 to-primary rounded-3xl blur opacity-20 group-hover:opacity-60 transition duration-1000"></div>
           
           <div className="relative h-56 w-52 md:h-72 md:w-64 rounded-3xl border-2 border-white/10 p-1 bg-card/50 backdrop-blur-md overflow-hidden shadow-2xl">

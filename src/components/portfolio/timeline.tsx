@@ -6,13 +6,13 @@ const steps = [
   {
     year: "2014",
     title: "AutoCAD e Primeiro Contato",
-    description: "Curso no SENAC e experiência de 3 meses em escritório de engenharia, meu primeiro contato prático.",
+    description: "Curso no SENAC e experiência de 3 meses em escritório de engenharia, iniciando meu contato técnico.",
     color: "from-red-500 to-red-700",
     glow: "shadow-red-500/20"
   },
   {
     year: "2015 - 2018",
-    title: "Vendas e Faculdade",
+    title: "Vendedor e Faculdade",
     description: "Trabalhei como vendedor enquanto cursava os primeiros semestres da faculdade. Precisei trancar o curso na época.",
     color: "from-blue-500 to-blue-700",
     glow: "shadow-blue-500/20"
