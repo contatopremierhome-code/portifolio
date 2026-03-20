@@ -13,14 +13,14 @@ const steps = [
   {
     year: "2015 - 2018",
     title: "Graduação & Atuação Comercial",
-    description: "Início da faculdade na UNINOVE, conciliando os desafios acadêmicos com o trabalho como vendedor, desenvolvendo alta capacidade de negociação.",
+    description: "Início da faculdade na UNINOVE, conciliando os desafios acadêmicos com o trabalho como vendedor, desenvolvendo habilidades interpessoais e atendimento.",
     color: "from-blue-500 to-blue-700",
     glow: "shadow-blue-500/20"
   },
   {
     year: "2019 - 2024",
     title: "Gestão Autônoma & Mercado Livre",
-    description: "Desenvolvimento de competências críticas de logística, gestão financeira e alto nível de protagonismo profissional.",
+    description: "Desenvolvimento de competências de logística, gestão financeira e desenvolvimento de autonomia e responsabilidade profissional.",
     color: "from-green-500 to-green-700",
     glow: "shadow-green-500/20"
   },

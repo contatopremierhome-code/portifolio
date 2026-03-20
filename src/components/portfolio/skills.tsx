@@ -34,7 +34,7 @@ const skills = [
     color: "#31752F", 
     class: "glow-msproject",
     logo: "https://i.imgur.com/jMT5oMV.png",
-    desc: "Planejamento estratégico e controle de prazos de obra."
+    desc: "Planejamento e controle de prazos de obra."
   },
 ];
 
