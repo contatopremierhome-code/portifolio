@@ -1,4 +1,3 @@
-
 'use client';
 
 import * as React from "react";
@@ -18,7 +17,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Eye } from "lucide-react";
 import { useAudio } from "@/hooks/use-audio";
 
 const items = [
@@ -103,7 +102,7 @@ export default function ProjectsCarousel() {
                         className="w-full justify-between group-hover:bg-primary group-hover:text-white transition-all duration-500 text-[10px] font-black uppercase tracking-[0.2em] h-12 rounded-2xl border border-white/5"
                       >
                         Ver Projeto
-                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                        <Eye size={16} className="group-hover:scale-110 transition-transform" />
                       </Button>
                     </div>
                   </CardContent>
