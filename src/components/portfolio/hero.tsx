@@ -62,7 +62,7 @@ export default function HeroSection() {
               "Trabalhador, dedicado e em constante aprendizado."
             </p>
             <p className="text-white/80 mt-4 leading-relaxed text-lg font-medium">
-              Estudante de Engenharia Civil, proativo e organizado, buscando aplicar meus conhecimentos e crescer profissionalmente. Com facilidade de aprendizado e familiaridade com ferramentas técnicas, desejo contribuir para a eficiência da equipe.
+              Estudante de Engenharia Civil, proativo e organizado, buscando aplicar meus conhecimentos e crescer profissionalmente. Com facilidade de aprendizado e familiaridade com ferramentas técnicas, desejo contribuir para a eficiência da equipe, conciliando meus estudos com o trabalho atual.
             </p>
           </div>
           

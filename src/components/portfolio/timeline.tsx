@@ -5,7 +5,7 @@ import { useAudio } from "@/hooks/use-audio";
 const steps = [
   {
     year: "2014",
-    title: "AutoCAD e Primeiro Registro",
+    title: "AutoCAD e Único Registro",
     description: "Curso no SENAC e experiência de 3 meses em escritório de engenharia, meu primeiro contato prático com projetos.",
     color: "from-red-500 to-red-700",
     glow: "shadow-red-500/20"
@@ -18,16 +18,16 @@ const steps = [
     glow: "shadow-blue-500/20"
   },
   {
-    year: "2019 - 2024",
+    year: "2019 - Atualmente",
     title: "Trabalho Independente",
-    description: "Atuei por conta própria no Mercado Livre, focando em manter minha renda com responsabilidade e dedicação.",
+    description: "Atuação no Mercado Livre, focando em manter minha renda com responsabilidade e dedicação constante.",
     color: "from-green-500 to-green-700",
     glow: "shadow-green-500/20"
   },
   {
     year: "2025",
     title: "Retorno à UNINOVE",
-    description: "Retorno aos estudos conciliando com o trabalho, focado em concluir a graduação em Engenharia Civil.",
+    description: "Retorno aos estudos conciliando com o trabalho atual, focado em concluir a graduação em Engenharia Civil.",
     color: "from-primary to-blue-400",
     glow: "shadow-primary/20"
   },

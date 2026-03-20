@@ -10,7 +10,7 @@ const buildingSteps = [
     title: "Base de Trabalho",
     desc: "Início na Santa Efigênia (ambulante): Aprendendo o valor do esforço desde cedo.",
     icon: <Ruler className="h-8 w-8" />,
-    year: "2014"
+    year: "Início"
   },
   {
     title: "Registro em Carteira",
@@ -20,7 +20,7 @@ const buildingSteps = [
   },
   {
     title: "Vendas e Estudos",
-    desc: "Trabalho como vendedor conciliando com a faculdade, sempre mantendo a rotina de trabalho ativa.",
+    desc: "Trabalho como vendedor conciliando com a faculdade, mantendo a rotina de trabalho ativa.",
     icon: <ShoppingBag className="h-8 w-8" />,
     year: "2015-2018"
   },
@@ -28,7 +28,7 @@ const buildingSteps = [
     title: "Trabalho Independente",
     desc: "Atuação independente no Mercado Livre: Foco em responsabilidade e dedicação.",
     icon: <Building2 className="h-8 w-8" />,
-    year: "2019-2024"
+    year: "2019-Atualmente"
   },
   {
     title: "Estudos e Trabalho",

@@ -18,12 +18,12 @@ export default function ContactSection() {
             </div>
             <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter uppercase italic leading-none">CONTATO</h2>
             <p className="text-2xl text-white/70 leading-relaxed font-light max-w-2xl mx-auto">
-              Pronto para somar na sua equipe com eficiência técnica e <span className="text-white font-bold">foco em resultados independentes</span>.
+              Pronto para somar na sua equipe com dedicação e <span className="text-white font-bold">foco em aprendizado contínuo</span>.
             </p>
             
             <div className="mt-12 p-8 rounded-[2rem] bg-white/5 border border-white/10 max-w-3xl mx-auto">
               <p className="text-xl text-white/80 leading-relaxed font-medium italic">
-                "Agradeço imensamente por dedicar seu tempo para conhecer minha trajetória e competências. Caso tenha interesse em agendarmos uma reunião ou conversar sobre como posso contribuir com sua empresa, ficarei muito feliz e satisfeito com o seu contato."
+                "Agradeço por dedicar seu tempo para conhecer minha trajetória. Caso queira conversar sobre como posso contribuir com sua empresa, ficarei muito satisfeito com o seu contato."
               </p>
             </div>
           </div>
