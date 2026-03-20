@@ -8,7 +8,7 @@ export default function ContactSection() {
   const { playSound } = useAudio();
 
   return (
-    <footer id="contact" className="py-40 relative border-t border-white/10 blueprint-grid bg-black/60">
+    <footer id="contact" className="py-20 md:py-40 relative border-t border-white/10 blueprint-grid bg-black/80">
       <div className="container mx-auto px-4 reveal text-center">
         <div className="max-w-4xl mx-auto space-y-20">
           
@@ -22,24 +22,24 @@ export default function ContactSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <a 
               href="mailto:jeovanede@hotmail.com"
-              className="p-12 rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer block"
+              className="p-12 rounded-[2.5rem] md:rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer block border-white/5"
               onClick={() => playSound('click')}
             >
-              <div className="h-20 w-20 rounded-[2rem] bg-primary/10 flex items-center justify-center text-primary mx-auto mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-2xl group-hover:rotate-12">
+              <div className="h-16 w-16 md:h-20 md:w-20 rounded-[1.5rem] md:rounded-[2rem] bg-primary/10 flex items-center justify-center text-primary mx-auto mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-2xl group-hover:rotate-12">
                 <Mail size={32} />
               </div>
-              <p className="text-xs text-white/50 uppercase font-black tracking-[0.3em] mb-2">E-mail</p>
-              <p className="font-black text-white text-lg break-all">jeovanede@hotmail.com</p>
+              <p className="text-[10px] text-white/50 uppercase font-black tracking-[0.3em] mb-2">E-mail</p>
+              <p className="font-black text-white text-base md:text-lg break-all">jeovanede@hotmail.com</p>
             </a>
             
             <a 
               href="https://wa.me/5511919854675?text=Olá%20Jeovane,%20vim%20através%20do%20seu%20Portifólio%20!" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-12 rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer border-primary/30"
+              className="p-12 rounded-[2.5rem] md:rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer border-primary/30"
               onClick={() => playSound('click')}
             >
-              <div className="h-20 w-20 rounded-[2rem] bg-[#25D366]/10 flex items-center justify-center text-[#25D366] mx-auto mb-8 group-hover:bg-[#25D366] transition-all duration-500 shadow-2xl group-hover:rotate-12 overflow-hidden p-4">
+              <div className="h-16 w-16 md:h-20 md:w-20 rounded-[1.5rem] md:rounded-[2rem] bg-[#25D366]/10 flex items-center justify-center text-[#25D366] mx-auto mb-8 group-hover:bg-[#25D366] transition-all duration-500 shadow-2xl group-hover:rotate-12 overflow-hidden p-4">
                 <Image 
                   src="https://i.imgur.com/Hr6SCB8.png" 
                   alt="WhatsApp" 
@@ -48,28 +48,28 @@ export default function ContactSection() {
                   className="object-contain"
                 />
               </div>
-              <p className="text-xs text-white/50 uppercase font-black tracking-[0.3em] mb-2">WhatsApp</p>
-              <p className="font-black text-white text-lg">(11) 91985-4675</p>
+              <p className="text-[10px] text-white/50 uppercase font-black tracking-[0.3em] mb-2">WhatsApp</p>
+              <p className="font-black text-white text-base md:text-lg">(11) 91985-4675</p>
             </a>
 
             <div 
-              className="p-12 rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer"
+              className="p-12 rounded-[2.5rem] md:rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer border-white/5"
               onClick={() => playSound('click')}
             >
-              <div className="h-20 w-20 rounded-[2rem] bg-primary/10 flex items-center justify-center text-primary mx-auto mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-2xl group-hover:rotate-12">
+              <div className="h-16 w-16 md:h-20 md:w-20 rounded-[1.5rem] md:rounded-[2rem] bg-primary/10 flex items-center justify-center text-primary mx-auto mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-2xl group-hover:rotate-12">
                 <MapPin size={32} />
               </div>
-              <p className="text-xs text-white/50 uppercase font-black tracking-[0.3em] mb-2">Local</p>
-              <p className="font-black text-white text-lg">São Paulo - SP</p>
+              <p className="text-[10px] text-white/50 uppercase font-black tracking-[0.3em] mb-2">Local</p>
+              <p className="font-black text-white text-base md:text-lg">São Paulo - SP</p>
             </div>
           </div>
 
-          <div className="pt-20 opacity-20">
+          <div className="pt-20 opacity-30">
             <Key size={60} className="mx-auto animate-float text-primary" />
           </div>
         </div>
 
-        <div className="mt-40 pt-12 border-t border-white/10 text-[12px] md:text-[14px] uppercase tracking-[0.5em] text-white font-black drop-shadow-lg">
+        <div className="mt-20 md:mt-40 pt-12 border-t border-white/10 text-[10px] md:text-[14px] uppercase tracking-[0.3em] md:tracking-[0.5em] text-white font-black drop-shadow-lg">
           <p>© {new Date().getFullYear()} JEOVANE DE OLIVEIRA | ENGENHARIA CIVIL (UNINOVE).</p>
         </div>
       </div>
