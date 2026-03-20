@@ -82,7 +82,6 @@ export default function AboutSection() {
 }
 
 function playAudio(type: 'hover' | 'click') {
-  // Mock function to avoid undefined error in this context if not using the hook properly
   const audio = new Audio(type === 'hover' ? 'https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3' : 'https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3');
   audio.volume = 0.1;
   audio.play().catch(() => {});

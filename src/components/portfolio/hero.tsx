@@ -21,11 +21,13 @@ export default function HeroSection() {
 
       <div className="container relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto space-y-12">
         
-        {/* Foto de Perfil Profissional */}
-        <div className="flex flex-col items-center animate-construct">
-          <div className="relative group perspective-1000 w-fit">
+        {/* Foto de Perfil Profissional e Status */}
+        <div className="flex flex-col items-center gap-6 animate-construct">
+          <div className="relative group perspective-1000">
+            {/* Brilho de fundo */}
             <div className="absolute -inset-2 bg-gradient-to-r from-primary via-blue-400 to-primary rounded-3xl blur opacity-20 group-hover:opacity-60 transition duration-1000"></div>
             
+            {/* Container da Foto */}
             <div className="relative h-56 w-52 md:h-72 md:w-64 rounded-3xl border-2 border-white/10 p-1 bg-card/50 backdrop-blur-md overflow-hidden shadow-2xl">
               <div className="relative h-full w-full rounded-2xl overflow-hidden bg-primary/10">
                 <Image
@@ -40,9 +42,11 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent h-[10%] w-full animate-scan opacity-0 group-hover:opacity-100 z-20"></div>
               </div>
             </div>
+          </div>
 
-            {/* Tag de Status Profissional - Centralizada abaixo da foto */}
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-accent px-6 py-2 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap z-40 animate-pulse-whatsapp">
+          {/* Tag de Status Profissional - Agora centralizada abaixo da foto */}
+          <div className="relative z-40 -mt-10">
+            <div className="bg-accent px-6 py-2 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap animate-pulse-whatsapp">
               Disponível para Estágio
             </div>
           </div>
@@ -95,7 +99,7 @@ export default function HeroSection() {
               onClick={() => playSound('click')}
             >
               <MapPin className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/90">Campos Elíseos - São Paulo SP</span>
+              <span className="text-sm font-bold text-white/90">São Paulo SP</span>
             </div>
           </div>
         </div>
