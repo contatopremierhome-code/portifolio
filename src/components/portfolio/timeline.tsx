@@ -33,8 +33,8 @@ const steps = [
   },
   {
     year: "2026",
-    title: "Graduação Completa",
-    description: "Formação oficial em Engenharia Civil e ingresso pleno como engenheiro no mercado.",
+    title: "Conclusão da Graduação (Previsão)",
+    description: "Fase final da formação acadêmica e colação de grau, consolidando o conhecimento técnico para atuação plena como Engenheiro Civil.",
     color: "from-yellow-400 to-yellow-600",
     glow: "shadow-yellow-500/20"
   }
