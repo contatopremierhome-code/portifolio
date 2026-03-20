@@ -8,7 +8,7 @@ export default function ContactSection() {
   const { playSound } = useAudio();
 
   return (
-    <footer className="py-40 relative border-t border-white/10 blueprint-grid bg-black/60">
+    <footer id="contact" className="py-40 relative border-t border-white/10 blueprint-grid bg-black/60">
       <div className="container mx-auto px-4 reveal text-center">
         <div className="max-w-4xl mx-auto space-y-20">
           

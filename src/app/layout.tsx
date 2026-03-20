@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import ScrollProgress from '@/components/portfolio/scroll-progress';
+import Navbar from '@/components/portfolio/navbar';
 
 export const metadata: Metadata = {
   title: 'Jeovane de Oliveira | Engenharia Civil UNINOVE',
@@ -25,6 +26,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </head>
       <body className={cn('antialiased bg-[#121212]')}>
+        <Navbar />
         {children}
         <Toaster />
         

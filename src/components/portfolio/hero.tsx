@@ -8,7 +8,7 @@ export default function HeroSection() {
   const { playSound } = useAudio();
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-4 overflow-hidden blueprint-grid">
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-4 overflow-hidden blueprint-grid">
       {/* Elementos de Decoração Industrial */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <div className="absolute top-20 left-10 text-primary/5 rotate-12 animate-float">
