@@ -31,18 +31,18 @@ export default function HeroSection() {
                 src="https://i.imgur.com/J5gtnyg.jpg"
                 alt="Jeovane de Oliveira"
                 fill
-                className="object-cover transition-all duration-1000 grayscale group-hover:grayscale-0 group-hover:scale-105"
+                className="object-cover transition-all duration-1000 group-hover:scale-110"
                 priority
               />
               
-              {/* Overlay de Scanline Técnico */}
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-transparent to-transparent h-[10%] w-full animate-scan opacity-0 group-hover:opacity-100 z-20"></div>
+              {/* Overlay de Scanline Técnico Sutil */}
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent h-[10%] w-full animate-scan opacity-0 group-hover:opacity-100 z-20"></div>
             </div>
           </div>
 
-          {/* Tag de Status Profissional */}
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-primary px-6 py-1.5 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap z-40">
-            Foco: Engenharia Civil
+          {/* Tag de Status Profissional - Disponível para Estágio */}
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-accent px-6 py-2 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap z-40 animate-pulse-whatsapp">
+            Disponível para Estágio
           </div>
         </div>
 
@@ -55,16 +55,16 @@ export default function HeroSection() {
             </span>
           </h1>
           <p className="text-2xl md:text-3xl text-white/90 font-light tracking-widest uppercase">
-            Estudante de Engenharia Civil
+            Futuro Engenheiro Civil
           </p>
 
           <div className="max-w-2xl mx-auto p-8 rounded-[2.5rem] glass-card border-primary/20 relative overflow-hidden group">
             <div className="absolute top-0 left-0 w-2 h-full bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
-            <h2 className="text-primary font-black uppercase tracking-[0.3em] text-xs mb-4">Perfil Profissional</h2>
+            <h2 className="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-4">Perfil Profissional</h2>
             <p className="text-white text-xl font-bold leading-tight italic">
               "Dedicado, Analítico e Orientado a Resultados."
             </p>
-            <p className="text-white/80 mt-4 leading-relaxed text-lg">
+            <p className="text-white/80 mt-4 leading-relaxed text-lg font-medium">
               Mais do que um estudante de Engenharia Civil, sou um profissional formado pela prática e pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela capacidade de autogestão.
             </p>
           </div>
