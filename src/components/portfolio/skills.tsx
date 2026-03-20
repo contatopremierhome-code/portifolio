@@ -5,7 +5,7 @@ import { useAudio } from "@/hooks/use-audio";
 
 const skills = [
   { 
-    name: "AutoCAD (2D e 3D)", 
+    name: "AutoCAD (2D)", 
     level: "Avançado", 
     color: "#FF0000", 
     class: "glow-autocad",
@@ -18,23 +18,23 @@ const skills = [
     color: "#217346", 
     class: "glow-excel",
     logo: "https://i.imgur.com/IiTdh12.png",
-    desc: "Gestão de dados, fórmulas complexas e cronogramas."
+    desc: "Gestão de dados, fórmulas e cronogramas de trabalho."
   },
   { 
     name: "Revit (BIM)", 
-    level: "Básico/Intermediário", 
+    level: "Básico", 
     color: "#0696D7", 
     class: "glow-revit",
     logo: "https://cdn.simpleicons.org/autodeskrevit/0696D7",
-    desc: "Modelagem de informação da construção e renderização."
+    desc: "Iniciando estudos em modelagem da construção."
   },
   { 
     name: "MS-Project", 
-    level: "Básico/Intermediário", 
+    level: "Básico", 
     color: "#31752F", 
     class: "glow-msproject",
     logo: "https://i.imgur.com/jMT5oMV.png",
-    desc: "Planejamento e controle de prazos de obra."
+    desc: "Conhecimentos iniciais em cronogramas de obra."
   },
 ];
 
@@ -46,10 +46,10 @@ export default function SkillsSection() {
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-32">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
-            Expertise Técnica
+            Conhecimentos Técnicos
           </div>
           <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic">HARD SKILLS</h2>
-          <p className="text-muted-foreground uppercase tracking-[0.5em] text-xs font-bold">Domínio de Ferramentas Industriais</p>
+          <p className="text-muted-foreground uppercase tracking-[0.5em] text-xs font-bold">Uso de Ferramentas Técnicas</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">

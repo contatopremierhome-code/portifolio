@@ -25,26 +25,26 @@ const items = [
     title: "Projeto Integrador",
     category: "Acadêmico",
     image: "https://i.imgur.com/G1IMRC2.jpg",
-    description: "Desenvolvimento técnico integrado abrangendo múltiplas disciplinas da engenharia para a criação de soluções estruturais e arquitetônicas eficientes. Projeto realizado em grupo com fins estritamente didáticos para estudo e aprendizado.",
+    description: "Trabalho realizado em grupo com fins estritamente didáticos para estudo e aprendizado das disciplinas da faculdade.",
     link: "https://drive.google.com/file/d/1rlikXIKjR4LoG6p62k_ZfJpquRQye_fy/preview"
   },
   {
     title: "Projetos AutoCAD",
     category: "Planta Técnica",
     image: "https://picsum.photos/seed/autocad8/800/600",
-    description: "Desenvolvimento de plantas baixas, cortes e detalhamento técnico com precisão rigorosa seguindo as normas vigentes."
+    description: "Prática em desenhos de plantas baixas e cortes técnicos, focando em precisão e normas básicas."
   },
   {
-    title: "Gestão de Obras",
-    category: "Operações",
+    title: "Noções de Obra",
+    category: "Estudo",
     image: "https://picsum.photos/seed/const1/800/600",
-    description: "Planejamento estratégico e controle de execução em canteiro de obras, focando em produtividade e qualidade."
+    description: "Acompanhamento acadêmico de processos de execução e materiais usados no dia a dia da construção."
   },
   {
     title: "Logística Mercado Livre",
     category: "Experiência",
     image: "https://picsum.photos/seed/logis2/800/600",
-    description: "Otimização de processos logísticos e gestão de fluxos operacionais, garantindo o cumprimento rigoroso de prazos SLA."
+    description: "Trabalho contínuo com processos de entrega e controle de prazos para o cumprimento do serviço."
   }
 ];
 
@@ -63,8 +63,8 @@ export default function ProjectsCarousel() {
     <section id="projects" className="py-32 bg-white/5">
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter text-white uppercase">PROJETOS & CERTIFICADOS</h2>
-          <p className="text-muted-foreground uppercase tracking-[0.3em] text-sm">Galeria de Resultados</p>
+          <h2 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter text-white uppercase">TRABALHOS & ESTUDOS</h2>
+          <p className="text-muted-foreground uppercase tracking-[0.3em] text-sm">Prática e Aprendizado</p>
         </div>
 
         <Carousel
@@ -101,7 +101,7 @@ export default function ProjectsCarousel() {
                         variant="ghost" 
                         className="w-full justify-between group-hover:bg-primary group-hover:text-white transition-all duration-500 text-[10px] font-black uppercase tracking-[0.2em] h-12 rounded-2xl border border-white/5"
                       >
-                        Ver Projeto
+                        Ver Detalhes
                         <Eye size={16} className="group-hover:scale-110 transition-transform" />
                       </Button>
                     </div>
@@ -125,9 +125,9 @@ export default function ProjectsCarousel() {
         {/* Modal de Visualização de PDF */}
         <Dialog open={!!selectedPdf} onOpenChange={() => setSelectedPdf(null)}>
           <DialogContent className="max-w-[80vw] w-[80vw] h-[85vh] p-0 bg-black border-white/10 overflow-hidden flex flex-col">
-            <DialogTitle className="sr-only">Visualização do Projeto Integrador</DialogTitle>
+            <DialogTitle className="sr-only">Visualização de Documento</DialogTitle>
             <DialogDescription className="sr-only">
-              Visualizador de documento PDF para o Projeto Integrador de Engenharia Civil.
+              Visualizador de documento PDF para estudos acadêmicos.
             </DialogDescription>
             {selectedPdf && (
               <div className="w-full h-full relative">

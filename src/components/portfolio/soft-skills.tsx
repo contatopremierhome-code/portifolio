@@ -1,29 +1,29 @@
 'use client';
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Workflow, ShieldCheck, MessagesSquare, CalendarClock, Zap } from "lucide-react";
+import { Users, CheckCircle, BookOpen, ClipboardList, Zap } from "lucide-react";
 import { useAudio } from "@/hooks/use-audio";
 
 const softSkills = [
   {
-    name: "Liderança Própria",
-    description: "Capacidade de conduzir o próprio fluxo de trabalho, priorizando tarefas com independência e eficácia técnica.",
-    icon: <Workflow className="h-10 w-10" />,
+    name: "Comprometimento",
+    description: "Foco em realizar as tarefas com dedicação e responsabilidade no dia a dia.",
+    icon: <CheckCircle className="h-10 w-10" />,
   },
   {
-    name: "Resiliência",
-    description: "Adaptação estratégica a desafios complexos, mantendo a produtividade e o foco sob alta pressão.",
-    icon: <ShieldCheck className="h-10 w-10" />,
+    name: "Vontade de Aprender",
+    description: "Aberto a novos conhecimentos, ferramentas e pronto para aprender com a equipe.",
+    icon: <BookOpen className="h-10 w-10" />,
   },
   {
-    name: "Comunicação Assertiva",
-    description: "Experiência sólida em negociação e atendimento, transmitindo informações de forma clara e profissional.",
-    icon: <MessagesSquare className="h-10 w-10" />,
+    name: "Trabalho em Equipe",
+    description: "Facilidade em colaborar e manter um bom relacionamento com os colegas.",
+    icon: <Users className="h-10 w-10" />,
   },
   {
-    name: "Disciplina com Prazos",
-    description: "Foco absoluto no cumprimento rigoroso de cronogramas e marcos de entrega em todos os projetos.",
-    icon: <CalendarClock className="h-10 w-10" />,
+    name: "Organização",
+    description: "Cuidado com a organização das atividades e pontualidade com prazos.",
+    icon: <ClipboardList className="h-10 w-10" />,
   },
 ];
 
@@ -35,7 +35,7 @@ export default function SoftSkillsSection() {
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-32">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-accent/20">
-            Diferenciais Interpessoais
+            Diferenciais
           </div>
           <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic">SOFT SKILLS</h2>
           <div className="h-3 w-40 bg-accent mx-auto rounded-full shadow-[0_0_20px_rgba(34,197,94,0.5)]"></div>
