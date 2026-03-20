@@ -42,7 +42,7 @@ export default function BuildingAnimation() {
   const { playSound } = useAudio();
 
   return (
-    <section className="py-40 relative overflow-hidden bg-black">
+    <section className="py-20 md:py-40 relative overflow-hidden bg-black">
       {/* Video Background Imersivo */}
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
         <video 
@@ -59,18 +59,18 @@ export default function BuildingAnimation() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-32 reveal">
+        <div className="text-center mb-16 md:mb-32 reveal">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
             Minha Trajetória
           </div>
           <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">TRAJETÓRIA</h2>
-          <div className="h-3 w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
+          <div className="h-2 md:h-3 w-24 md:w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           
-          {/* Visual Building Simulation */}
-          <div className="relative flex flex-col-reverse items-center gap-4 py-20 reveal">
+          {/* Visual Building Simulation - Hidden on Mobile */}
+          <div className="relative hidden lg:flex flex-col-reverse items-center gap-4 py-20 reveal">
             <div className="absolute -top-40 right-0 w-full h-full pointer-events-none opacity-10 animate-float">
               <div className="w-2 h-[150vh] bg-primary/40 absolute left-1/2"></div>
               <div className="h-2 w-full bg-primary/40 absolute top-20"></div>
@@ -97,20 +97,20 @@ export default function BuildingAnimation() {
           </div>
 
           {/* Details Side */}
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
             {buildingSteps.map((step, index) => (
               <Card 
                 key={index} 
-                className="glass-card border-l-8 border-l-primary reveal rounded-[2.5rem] group hover:bg-primary/5 transition-all duration-500" 
+                className="glass-card border-l-4 md:border-l-8 border-l-primary reveal rounded-[1.5rem] md:rounded-[2.5rem] group hover:bg-primary/5 transition-all duration-500" 
                 style={{ transitionDelay: `${index * 150}ms` }}
                 onMouseEnter={() => playSound('hover')}
               >
-                <CardContent className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl font-black text-white uppercase italic group-hover:text-primary transition-colors">{step.title}</h3>
-                    <span className="text-[10px] bg-primary/20 text-primary px-4 py-1.5 rounded-full font-black tracking-widest border border-primary/30">{step.year}</span>
+                <CardContent className="p-6 md:p-8">
+                  <div className="flex items-center justify-between mb-3 md:mb-4">
+                    <h3 className="text-lg md:text-xl font-black text-white uppercase italic group-hover:text-primary transition-colors">{step.title}</h3>
+                    <span className="text-[9px] md:text-[10px] bg-primary/20 text-primary px-3 md:px-4 py-1 rounded-full font-black tracking-widest border border-primary/30">{step.year}</span>
                   </div>
-                  <p className="text-white/80 text-base leading-relaxed font-medium">{step.desc}</p>
+                  <p className="text-white/80 text-sm md:text-base leading-relaxed font-medium">{step.desc}</p>
                 </CardContent>
               </Card>
             ))}
