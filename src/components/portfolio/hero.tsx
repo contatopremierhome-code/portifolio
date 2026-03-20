@@ -44,8 +44,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Tag de Status Profissional - Agora centralizada abaixo da foto */}
-          <div className="relative z-40 -mt-10">
+          {/* Tag de Status Profissional - Perfeitamente centralizada abaixo da foto */}
+          <div className="relative z-40">
             <div className="bg-accent px-6 py-2 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap animate-pulse-whatsapp">
               Disponível para Estágio
             </div>

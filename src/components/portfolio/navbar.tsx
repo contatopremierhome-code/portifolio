@@ -42,7 +42,8 @@ export default function Navbar() {
           <div className="h-10 w-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all duration-500 group-hover:rotate-12">
             <HardHat size={20} />
           </div>
-          <span className="text-sm font-black text-white uppercase tracking-[0.3em] hidden sm:block">
+          {/* Nome escondido no celular (hidden), visível apenas no computador (md:block) */}
+          <span className="text-sm font-black text-white uppercase tracking-[0.3em] hidden md:block">
             Jeovane de Oliveira
           </span>
         </div>
