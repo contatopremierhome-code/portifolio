@@ -78,36 +78,6 @@
   animation: float 4s ease-in-out infinite;
 }
 
-/* Builder Animations */
-@keyframes builder-path-1 {
-  0% { top: -20px; left: -20px; opacity: 0; }
-  10% { opacity: 1; }
-  25% { top: -20px; left: 100%; }
-  50% { top: 100%; left: 100%; }
-  75% { top: 100%; left: -20px; }
-  90% { opacity: 1; }
-  100% { top: -20px; left: -20px; opacity: 0; }
-}
-
-@keyframes builder-path-2 {
-  0% { bottom: -20px; right: -20px; opacity: 0; }
-  10% { opacity: 1; }
-  25% { bottom: -20px; right: 100%; }
-  50% { bottom: 100%; right: 100%; }
-  75% { bottom: 100%; right: -20px; }
-  90% { opacity: 1; }
-  100% { bottom: -20px; right: -20px; opacity: 0; }
-}
-
-@keyframes builder-work {
-  0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(-20deg) translateY(-5px); }
-}
-
-.animate-builder-1 { animation: builder-path-1 8s linear infinite; }
-.animate-builder-2 { animation: builder-path-2 10s linear infinite reverse; }
-.animate-builder-icon { animation: builder-work 0.5s ease-in-out infinite; }
-
 /* Reveal System */
 .reveal {
   opacity: 0;
@@ -143,7 +113,7 @@
 .glow-revit:hover { filter: drop-shadow(0 0 25px rgba(6, 150, 215, 0.4)); transform: translateY(-5px); }
 .glow-msproject:hover { filter: drop-shadow(0 0 25px rgba(49, 117, 47, 0.4)); transform: translateY(-5px); }
 
-/* Scan Line Animation for Timeline */
+/* Scan Line Animation */
 @keyframes scan-line {
   0% { transform: translateY(-100%); opacity: 0; }
   50% { opacity: 1; }
@@ -152,16 +122,4 @@
 
 .animate-scan {
   animation: scan-line 4s linear infinite;
-}
-
-/* Crane Hook Simulation */
-.crane-cable {
-  width: 2px;
-  background: linear-gradient(to bottom, rgba(59, 130, 246, 0.5), transparent);
-  height: 100vh;
-  position: absolute;
-  top: -100vh;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: height 1s ease-out;
 }
