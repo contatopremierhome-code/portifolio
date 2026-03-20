@@ -22,7 +22,7 @@ const skills = [
   },
   { 
     name: "Revit (BIM)", 
-    level: "Básico", 
+    level: "Básico/Intermediário", 
     color: "#0696D7", 
     class: "glow-revit",
     logo: "https://cdn.simpleicons.org/autodeskrevit/0696D7",
@@ -30,7 +30,7 @@ const skills = [
   },
   { 
     name: "MS-Project", 
-    level: "Básico", 
+    level: "Básico/Intermediário", 
     color: "#31752F", 
     class: "glow-msproject",
     logo: "https://i.imgur.com/jMT5oMV.png",
@@ -45,11 +45,12 @@ export default function SkillsSection() {
     <section id="skills" className="py-20 md:py-40 relative overflow-hidden bg-black/40">
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-16 md:mb-32">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
+          <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-white/20 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
             Conhecimentos Técnicos
           </div>
-          <h2 className="text-4xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">HARD SKILLS</h2>
+          <h2 className="text-4xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">HARD SKILLS</h2>
           <div className="h-2 md:h-3 w-24 md:w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
+          <p className="mt-8 text-white/60 font-black uppercase tracking-[0.4em] text-[10px] md:text-xs">Uso de Ferramentas Técnicas</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
@@ -61,7 +62,7 @@ export default function SkillsSection() {
               onClick={() => playSound('click')}
             >
               <CardContent className="p-8 md:p-10 flex flex-col items-center justify-center gap-6 md:gap-8 relative">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="relative h-20 w-20 md:h-24 md:w-24 flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
                   <div className="absolute inset-0 rounded-full blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500" style={{ backgroundColor: skill.color }}></div>
@@ -74,10 +75,10 @@ export default function SkillsSection() {
                 
                 <div className="text-center relative z-10">
                   <h3 className="font-black text-white text-lg md:text-xl mb-2 tracking-tight uppercase">{skill.name}</h3>
-                  <div className="inline-block px-4 py-1 rounded-full bg-white/10 border border-white/20 text-[10px] font-black uppercase tracking-widest text-primary mb-4">
+                  <div className="inline-block px-4 py-1 rounded-full bg-primary text-white text-[10px] font-black uppercase tracking-widest mb-4 shadow-lg border border-white/10">
                     {skill.level}
                   </div>
-                  <p className="text-sm text-white leading-relaxed max-w-[220px] mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-bold drop-shadow-lg">
+                  <p className="text-sm text-white leading-relaxed max-w-[220px] mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-black drop-shadow-xl">
                     {skill.desc}
                   </p>
                 </div>
