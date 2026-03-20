@@ -50,7 +50,7 @@ export default function ContactSection() {
             >
               <div className="h-20 w-20 rounded-[2rem] bg-[#25D366]/10 flex items-center justify-center text-[#25D366] mx-auto mb-8 group-hover:bg-[#25D366] transition-all duration-500 shadow-2xl group-hover:rotate-12 overflow-hidden p-4">
                 <Image 
-                  src="https://imgur.com/aEWwvNf.png" 
+                  src="https://i.imgur.com/Hr6SCB8.png" 
                   alt="WhatsApp" 
                   width={48} 
                   height={48} 
