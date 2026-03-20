@@ -13,26 +13,26 @@ const buildingSteps = [
     year: "Início"
   },
   {
-    title: "Registro em Carteira",
-    desc: "Curso de AutoCAD no SENAC e experiência de 3 meses em escritório, meu primeiro contato técnico na área.",
+    title: "Primeiro Contato Técnico",
+    desc: "Curso de AutoCAD no SENAC e experiência de 3 meses em escritório, meu primeiro contato prático na área.",
     icon: <Hammer className="h-8 w-8" />,
     year: "2014"
   },
   {
     title: "Vendas e Estudos",
-    desc: "Trabalho como vendedor conciliando com a faculdade, mantendo a rotina de trabalho ativa.",
+    desc: "Trabalho como vendedor conciliando com a faculdade, que precisei trancar temporariamente na época.",
     icon: <ShoppingBag className="h-8 w-8" />,
     year: "2015-2018"
   },
   {
     title: "Trabalho Independente",
-    desc: "Atuação independente no Mercado Livre: Foco em responsabilidade e dedicação.",
+    desc: "Atuação independente no Mercado Livre desde 2019: Mantendo a dedicação constante.",
     icon: <Building2 className="h-8 w-8" />,
     year: "2019-Atualmente"
   },
   {
-    title: "Estudos e Trabalho",
-    desc: "Conciliando o trabalho com o retorno aos estudos na UNINOVE, focado em concluir a graduação em Engenharia Civil.",
+    title: "Foco no Diploma",
+    desc: "Conciliando o trabalho com o retorno aos estudos na UNINOVE para concluir a graduação em Engenharia Civil.",
     icon: <HardHat className="h-8 w-8" />,
     year: "2025-2026"
   }

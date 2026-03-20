@@ -59,7 +59,7 @@ export default function AboutSection() {
                   </p>
                   
                   <p>
-                    Em <span className="text-white font-bold">2014</span>, fiz o curso de AutoCAD no SENAC e tive minha única experiência com registro em carteira na área por <span className="text-primary font-black">3 meses</span>. Foi meu primeiro contato técnico e um período de muito aprendizado.
+                    Em <span className="text-white font-bold">2014</span>, fiz o curso de AutoCAD no SENAC e tive experiência na área por <span className="text-primary font-black">3 meses</span>. Foi meu primeiro contato técnico e um período de muito aprendizado.
                   </p>
 
                   <div className="p-10 rounded-[2.5rem] bg-white/5 border border-white/10 mt-16 relative overflow-hidden group/box">
@@ -68,7 +68,7 @@ export default function AboutSection() {
                     </div>
                     <h4 className="text-primary font-black uppercase text-xs tracking-[0.4em] mb-6">Dedicação Contínua</h4>
                     <p className="relative z-10 text-white/90">
-                      Entre <span className="text-white font-bold">2015 e 2018</span>, trabalhei como <span className="text-white font-bold">vendedor</span> enquanto iniciava a faculdade. Por dificuldades financeiras, precisei trancar o curso, mas nunca parei de trabalhar. Atuo por conta própria no <span className="text-white font-black italic">Mercado Livre</span> desde <span className="text-white font-bold">2019 até hoje</span>, e em 2025 retornei à UNINOVE para concluir minha formação em 2026, conciliando o trabalho com os estudos.
+                      Entre <span className="text-white font-bold">2015 e 2018</span>, trabalhei como <span className="text-white font-bold">vendedor</span> enquanto iniciava a faculdade. Precisei trancar o curso, mas nunca parei de trabalhar. Atuo por conta própria no <span className="text-white font-black italic">Mercado Livre</span> desde <span className="text-white font-bold">2019 até hoje</span>, e em 2025 retornei à UNINOVE para concluir minha formação em 2026, conciliando o trabalho com os estudos.
                     </p>
                   </div>
                 </div>
