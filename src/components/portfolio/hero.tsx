@@ -59,10 +59,10 @@ export default function HeroSection() {
             <div className="absolute top-0 left-0 w-2 h-full bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
             <h2 className="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-4">Perfil Profissional</h2>
             <p className="text-white text-xl font-bold leading-tight italic">
-              "Dedicado, Analítico e Orientado a Resultados."
+              "Trabalhador, curioso e em constante aprendizado."
             </p>
             <p className="text-white/80 mt-4 leading-relaxed text-lg font-medium">
-              Além da sólida formação acadêmica, sou um profissional moldado pela experiência prática e pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela habilidade de liderar processos com independência operacional.
+              Estudante de Engenharia Civil, proativo e organizado, buscando aplicar meus conhecimentos e crescer profissionalmente. Com facilidade de aprendizado e familiaridade com ferramentas técnicas, desejo contribuir para a eficiência da equipe. Sou uma pessoa comum, mas dedicada, que aprende com os erros e busca sempre evoluir.
             </p>
           </div>
           
