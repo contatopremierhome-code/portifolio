@@ -22,27 +22,29 @@ export default function HeroSection() {
       <div className="container relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto space-y-12">
         
         {/* Foto de Perfil Profissional */}
-        <div className="relative group perspective-1000 animate-construct w-fit mx-auto">
-          <div className="absolute -inset-2 bg-gradient-to-r from-primary via-blue-400 to-primary rounded-3xl blur opacity-20 group-hover:opacity-60 transition duration-1000"></div>
-          
-          <div className="relative h-56 w-52 md:h-72 md:w-64 rounded-3xl border-2 border-white/10 p-1 bg-card/50 backdrop-blur-md overflow-hidden shadow-2xl">
-            <div className="relative h-full w-full rounded-2xl overflow-hidden bg-primary/10">
-              <Image
-                src="https://i.imgur.com/J5gtnyg.jpg"
-                alt="Jeovane de Oliveira"
-                fill
-                className="object-cover transition-all duration-1000 group-hover:scale-110"
-                priority
-              />
-              
-              {/* Overlay de Scanline Técnico Sutil */}
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent h-[10%] w-full animate-scan opacity-0 group-hover:opacity-100 z-20"></div>
+        <div className="flex flex-col items-center animate-construct">
+          <div className="relative group perspective-1000 w-fit">
+            <div className="absolute -inset-2 bg-gradient-to-r from-primary via-blue-400 to-primary rounded-3xl blur opacity-20 group-hover:opacity-60 transition duration-1000"></div>
+            
+            <div className="relative h-56 w-52 md:h-72 md:w-64 rounded-3xl border-2 border-white/10 p-1 bg-card/50 backdrop-blur-md overflow-hidden shadow-2xl">
+              <div className="relative h-full w-full rounded-2xl overflow-hidden bg-primary/10">
+                <Image
+                  src="https://i.imgur.com/J5gtnyg.jpg"
+                  alt="Jeovane de Oliveira"
+                  fill
+                  className="object-cover transition-all duration-1000 group-hover:scale-110"
+                  priority
+                />
+                
+                {/* Overlay de Scanline Técnico Sutil */}
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent h-[10%] w-full animate-scan opacity-0 group-hover:opacity-100 z-20"></div>
+              </div>
             </div>
-          </div>
 
-          {/* Tag de Status Profissional - Disponível para Estágio */}
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-accent px-6 py-2 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap z-40 animate-pulse-whatsapp">
-            Disponível para Estágio
+            {/* Tag de Status Profissional - Centralizada abaixo da foto */}
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-accent px-6 py-2 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap z-40 animate-pulse-whatsapp">
+              Disponível para Estágio
+            </div>
           </div>
         </div>
 
