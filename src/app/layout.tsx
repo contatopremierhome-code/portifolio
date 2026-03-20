@@ -44,7 +44,7 @@ export default function RootLayout({
             aria-label="Contratar para Estágio (WhatsApp)"
           >
             <Image 
-              src="https://imgur.com/uPsa7W7.png" 
+              src="https://imgur.com/aEWwvNf.png" 
               alt="WhatsApp" 
               width={40} 
               height={40} 
