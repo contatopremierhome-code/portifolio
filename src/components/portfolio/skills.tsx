@@ -5,12 +5,12 @@ import { useAudio } from "@/hooks/use-audio";
 
 const skills = [
   { 
-    name: "AutoCAD (2D)", 
+    name: "AutoCAD (2D e 3D)", 
     level: "Avançado", 
     color: "#FF0000", 
     class: "glow-autocad",
     logo: "https://cdn.simpleicons.org/autodesk/FF0000",
-    desc: "Projetos técnicos, plantas e detalhamento estrutural."
+    desc: "Projetos em 2D e 3D (Mobile e Desktop), plantas e detalhamento estrutural."
   },
   { 
     name: "Excel", 
@@ -45,11 +45,11 @@ export default function SkillsSection() {
     <section id="skills" className="py-40 relative overflow-hidden blueprint-grid">
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-32">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
+          <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary/20 text-white text-[12px] md:text-[14px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/40 shadow-[0_0_20px_rgba(59,130,246,0.2)]">
             Conhecimentos Técnicos
           </div>
-          <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic">HARD SKILLS</h2>
-          <p className="text-muted-foreground uppercase tracking-[0.5em] text-xs font-bold">Uso de Ferramentas Técnicas</p>
+          <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic drop-shadow-lg">HARD SKILLS</h2>
+          <p className="text-white/70 uppercase tracking-[0.5em] text-[10px] md:text-xs font-bold">Uso de Ferramentas Técnicas</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
