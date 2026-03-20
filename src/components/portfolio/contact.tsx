@@ -24,16 +24,17 @@ export default function ContactSection() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div 
-              className="p-12 rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer"
+            <a 
+              href="mailto:jeovanede@hotmail.com"
+              className="p-12 rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer block"
               onClick={() => playSound('click')}
             >
               <div className="h-20 w-20 rounded-[2rem] bg-primary/10 flex items-center justify-center text-primary mx-auto mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-2xl group-hover:rotate-12">
                 <Mail size={32} />
               </div>
               <p className="text-xs text-white/50 uppercase font-black tracking-[0.3em] mb-2">E-mail</p>
-              <p className="font-black text-white text-lg break-all">jeovane.costa@exemplo.com</p>
-            </div>
+              <p className="font-black text-white text-lg break-all">jeovanede@hotmail.com</p>
+            </a>
             
             <a 
               href="https://wa.me/5511919854675" 
