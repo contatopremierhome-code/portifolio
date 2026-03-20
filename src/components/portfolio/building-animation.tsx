@@ -7,32 +7,32 @@ import { useAudio } from "@/hooks/use-audio";
 
 const buildingSteps = [
   {
-    title: "Fundação Comercial",
-    desc: "Início na Santa Efigênia (ambulante): Base fundamental para o desenvolvimento de resiliência e visão prática de trabalho.",
+    title: "Base de Trabalho",
+    desc: "Início na Santa Efigênia (ambulante): Aprendendo o valor do esforço e do trabalho desde cedo.",
     icon: <Ruler className="h-8 w-8" />,
     year: "2014"
   },
   {
-    title: "Estrutura Técnica",
-    desc: "AutoCAD no SENAC e atuação em escritório, aprendendo a rotina de projetos e desenho técnico.",
+    title: "Primeiro Passo Técnico",
+    desc: "AutoCAD no SENAC e experiência de 3 meses em escritório, aprendendo as primeiras ferramentas da área.",
     icon: <Hammer className="h-8 w-8" />,
-    year: "2014-2015"
+    year: "2014"
   },
   {
-    title: "Experiência em Vendas",
-    desc: "Trabalho como vendedor conciliando com o início da faculdade, aprendendo a lidar com público e atendimento.",
+    title: "Vendas e Estudos",
+    desc: "Trabalho como vendedor conciliando com a faculdade, sempre mantendo a rotina de trabalho ativa.",
     icon: <ShoppingBag className="h-8 w-8" />,
     year: "2015-2018"
   },
   {
     title: "Trabalho Autônomo",
-    desc: "Atuação independente no Mercado Livre: Foco em responsabilidade, logística e organização de prazos.",
+    desc: "Atuação independente no Mercado Livre: Foco em responsabilidade e organização do próprio tempo.",
     icon: <Building2 className="h-8 w-8" />,
     year: "2019-2024"
   },
   {
-    title: "Foco na Formação",
-    desc: "Retorno aos estudos na UNINOVE, com dedicação total para concluir a graduação em Engenharia Civil.",
+    title: "Foco no Diploma",
+    desc: "Retorno aos estudos na UNINOVE com dedicação total para concluir a graduação em Engenharia Civil.",
     icon: <HardHat className="h-8 w-8" />,
     year: "2025-2026"
   }
@@ -63,7 +63,7 @@ export default function BuildingAnimation() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
             Minha Trajetória
           </div>
-          <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">CONSTRUINDO</h2>
+          <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">EVOLUÇÃO</h2>
           <div className="h-3 w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
         </div>
 

@@ -5,36 +5,36 @@ import { useAudio } from "@/hooks/use-audio";
 const steps = [
   {
     year: "2014",
-    title: "Especialização AutoCAD (SENAC)",
-    description: "Início do aprendizado técnico. Comecei a trabalhar em um escritório de engenharia desenhando projetos no computador.",
+    title: "AutoCAD e Primeiro Registro",
+    description: "Curso no SENAC e experiência de 3 meses em escritório de engenharia, meu primeiro contato prático com projetos.",
     color: "from-red-500 to-red-700",
     glow: "shadow-red-500/20"
   },
   {
     year: "2015 - 2018",
-    title: "Vendas & Início da Faculdade",
-    description: "Trabalhei como vendedor e iniciei a graduação na UNINOVE. Devido a motivos financeiros, precisei trancar o curso temporariamente.",
+    title: "Vendas e Início da Faculdade",
+    description: "Trabalhei como vendedor enquanto cursava os primeiros semestres na UNINOVE. Precisei parar devido a motivos financeiros.",
     color: "from-blue-500 to-blue-700",
     glow: "shadow-blue-500/20"
   },
   {
     year: "2019 - 2024",
     title: "Trabalho Independente",
-    description: "Atuei no Mercado Livre, focando em organização e responsabilidade para manter meu próprio trabalho e renda.",
+    description: "Atuei por conta própria no Mercado Livre, focando em manter minha renda com responsabilidade e organização.",
     color: "from-green-500 to-green-700",
     glow: "shadow-green-500/20"
   },
   {
     year: "2025",
     title: "Retorno à UNINOVE",
-    description: "Voltei aos estudos com dedicação total para aprender as novas ferramentas do setor e me formar.",
+    description: "De volta aos estudos com dedicação total para concluir o curso e ingressar no mercado de trabalho.",
     color: "from-primary to-blue-400",
     glow: "shadow-primary/20"
   },
   {
     year: "2026",
     title: "Formatura (Previsão)",
-    description: "Conclusão do curso de Engenharia Civil, buscando ingressar no mercado para aprender e contribuir na prática.",
+    description: "Conclusão do curso de Engenharia Civil, buscando aprender e contribuir em uma nova etapa profissional.",
     color: "from-yellow-400 to-yellow-600",
     glow: "shadow-yellow-500/20"
   }
@@ -51,7 +51,7 @@ export default function TimelineSection() {
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-32">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
-            Minha Evolução
+            Minha História
           </div>
           <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic">Evolução</h2>
           <div className="h-3 w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>

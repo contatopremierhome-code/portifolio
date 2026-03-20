@@ -23,9 +23,9 @@ export default function AboutSection() {
           
           <div className="text-center mb-24 relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
-              Trajetória Profissional
+              Minha História
             </div>
-            <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">Minha História</h2>
+            <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">Trajetória</h2>
             <div className="h-3 w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
           </div>
 
@@ -50,25 +50,25 @@ export default function AboutSection() {
                   <div className="h-20 w-20 rounded-3xl bg-primary/10 flex items-center justify-center text-primary shadow-inner">
                     <HardHat size={40} />
                   </div>
-                  <h3 className="text-3xl md:text-5xl text-white font-black tracking-tighter uppercase italic">Engenharia em Formação</h3>
+                  <h3 className="text-3xl md:text-5xl text-white font-black tracking-tighter uppercase italic">Trabalho e Estudo</h3>
                 </div>
                 
                 <div className="space-y-8 text-xl md:text-2xl text-white/90 leading-relaxed text-justify font-medium">
                   <p className="first-letter:text-7xl first-letter:font-black first-letter:text-primary first-letter:mr-3 first-letter:float-left">
-                    Minha vida profissional começou cedo, enfrentando os desafios do mercado real, onde iniciei trabalhando na <span className="text-white font-black border-b-2 border-primary/30">Santa Efigênia (ambulante)</span>. Essa base foi fundamental para desenvolver o dinamismo e a visão prática que carrego hoje.
+                    Minha caminhada profissional sempre foi baseada no esforço. Comecei cedo, trabalhando na <span className="text-white font-bold">Santa Efigênia como ambulante</span>, o que me deu uma base forte de dedicação e pé no chão desde o início.
                   </p>
                   
                   <p>
-                    Em <span className="text-white font-bold">2014</span>, descobri meu gosto para engenharia ao iniciar o curso de AutoCAD no SENAC. Meu desempenho foi tão destacado que recebi o convite do meu professor para integrar a sua empresa. Essa experiência foi vital e me ajudou na escolha da minha carreira.
+                    Em <span className="text-white font-bold">2014</span>, fiz o curso de AutoCAD no SENAC e tive minha primeira experiência na área em um escritório de engenharia por <span className="text-primary font-black">3 meses</span>. Foi meu primeiro contato técnico e um período de muito aprendizado.
                   </p>
 
                   <div className="p-10 rounded-[2.5rem] bg-white/5 border border-white/10 mt-16 relative overflow-hidden group/box">
                     <div className="absolute -top-10 -right-10 text-white/5 group-hover/box:text-primary/10 transition-colors duration-700">
                       <ShoppingBag size={200} />
                     </div>
-                    <h4 className="text-primary font-black uppercase text-xs tracking-[0.4em] mb-6">Determinação e Foco</h4>
+                    <h4 className="text-primary font-black uppercase text-xs tracking-[0.4em] mb-6">Dedicação Contínua</h4>
                     <p className="relative z-10 text-white/90">
-                      Entre <span className="text-white font-bold">2015 e 2018</span>, iniciei a graduação acadêmica, conciliando os estudos com a atuação como <span className="text-primary font-black">vendedor</span>. Por questões financeiras, precisei interromper os estudos por um período e trancar a faculdade, mas mantive firme o desejo de concluir minha formação. Retornei à UNINOVE no <span className="text-primary font-black">segundo semestre de 2025</span> com formatura prevista para <span className="text-white font-black">2026</span>. Atualmente, atuo de forma independente no <span className="text-white font-black italic">Mercado Livre</span>, buscando sempre o meu melhor.
+                      Entre <span className="text-white font-bold">2015 e 2018</span>, trabalhei como <span className="text-white font-bold">vendedor</span> enquanto iniciava a faculdade. Por dificuldades financeiras, precisei trancar o curso, mas nunca parei de trabalhar. Atuei por conta própria no <span className="text-white font-black italic">Mercado Livre</span> entre <span className="text-white font-bold">2019 e 2024</span>, e agora retornei à UNINOVE para concluir minha formação em 2026.
                     </p>
                   </div>
                 </div>
