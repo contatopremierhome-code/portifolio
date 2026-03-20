@@ -20,27 +20,32 @@ export default function ScrollProgress() {
   }, []);
 
   return (
-    <div className="fixed left-4 top-1/2 -translate-y-1/2 z-[60] flex flex-col items-center pointer-events-none hidden md:flex">
-      {/* Rótulo Vertical - Posicionado com margem inferior para evitar sobreposição */}
-      <div className="mb-24 rotate-[-90deg] whitespace-nowrap">
-        <span className="text-[10px] font-black text-primary uppercase tracking-[0.5em] drop-shadow-lg">
-          Status da Obra
-        </span>
+    <div className="fixed left-6 top-1/2 -translate-y-1/2 z-[60] flex flex-row items-center gap-2 pointer-events-none hidden md:flex">
+      {/* Rótulo Vertical à Esquerda */}
+      <div className="w-10 flex justify-center">
+        <div className="rotate-[-90deg] whitespace-nowrap">
+          <span className="text-[10px] font-black text-primary uppercase tracking-[0.4em] drop-shadow-lg opacity-80">
+            Status da Obra
+          </span>
+        </div>
       </div>
 
-      {/* Barra Vertical de Progresso */}
-      <div className="h-64 w-2 bg-white/5 rounded-full border border-white/10 overflow-hidden backdrop-blur-md shadow-2xl relative">
-        <div 
-          className="absolute bottom-0 left-0 w-full bg-primary transition-all duration-150 ease-out shadow-[0_0_20px_rgba(59,130,246,0.6)]"
-          style={{ height: `${progress}%` }}
-        />
-      </div>
+      {/* Container da Barra e Porcentagem */}
+      <div className="flex flex-col items-center gap-6">
+        {/* Barra Vertical de Progresso */}
+        <div className="h-72 w-2.5 bg-white/5 rounded-full border border-white/10 overflow-hidden backdrop-blur-md shadow-2xl relative">
+          <div 
+            className="absolute bottom-0 left-0 w-full bg-primary transition-all duration-150 ease-out shadow-[0_0_20px_rgba(59,130,246,0.6)]"
+            style={{ height: `${progress}%` }}
+          />
+        </div>
 
-      {/* Porcentagem de Progresso */}
-      <div className="mt-6">
-        <span className="text-[12px] font-black text-primary tabular-nums drop-shadow-lg">
-          {Math.round(progress)}%
-        </span>
+        {/* Porcentagem de Progresso */}
+        <div className="bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/5">
+          <span className="text-[14px] font-black text-primary tabular-nums drop-shadow-lg">
+            {Math.round(progress)}%
+          </span>
+        </div>
       </div>
     </div>
   );
