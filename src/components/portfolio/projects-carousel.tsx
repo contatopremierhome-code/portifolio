@@ -25,7 +25,7 @@ const items = [
     title: "Projeto Integrador",
     category: "Acadêmico",
     image: "https://i.imgur.com/G1IMRC2.jpg",
-    description: "Desenvolvimento técnico integrado abrangendo múltiplas disciplinas da engenharia para a criação de soluções estruturais e arquitetônicas eficientes. Um marco na aplicação prática do conhecimento acadêmico.",
+    description: "Desenvolvimento técnico integrado abrangendo múltiplas disciplinas da engenharia para a criação de soluções estruturais e arquitetônicas eficientes. Projeto realizado em grupo com fins estritamente didáticos para estudo e aprendizado.",
     link: "https://drive.google.com/file/d/1rlikXIKjR4LoG6p62k_ZfJpquRQye_fy/preview"
   },
   {
