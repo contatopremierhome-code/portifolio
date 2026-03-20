@@ -13,8 +13,8 @@ const buildingSteps = [
     year: "2014"
   },
   {
-    title: "Primeiro Passo Técnico",
-    desc: "AutoCAD no SENAC e experiência de 3 meses em escritório, aprendendo as primeiras ferramentas da área.",
+    title: "Registro em Carteira",
+    desc: "Curso de AutoCAD no SENAC e experiência de 3 meses em escritório, meu primeiro contato técnico na área.",
     icon: <Hammer className="h-8 w-8" />,
     year: "2014"
   },
@@ -25,8 +25,8 @@ const buildingSteps = [
     year: "2015-2018"
   },
   {
-    title: "Trabalho Autônomo",
-    desc: "Atuação independente no Mercado Livre: Foco em responsabilidade e organização do próprio tempo.",
+    title: "Trabalho Independente",
+    desc: "Atuação independente no Mercado Livre: Foco em manter minha renda com responsabilidade e dedicação.",
     icon: <Building2 className="h-8 w-8" />,
     year: "2019-2024"
   },
@@ -63,7 +63,7 @@ export default function BuildingAnimation() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
             Minha Trajetória
           </div>
-          <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">EVOLUÇÃO</h2>
+          <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">TRAJETÓRIA</h2>
           <div className="h-3 w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
         </div>
 

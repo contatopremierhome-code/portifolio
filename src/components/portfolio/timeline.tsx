@@ -20,7 +20,7 @@ const steps = [
   {
     year: "2019 - 2024",
     title: "Trabalho Independente",
-    description: "Atuei por conta própria no Mercado Livre, focando em manter minha renda com responsabilidade e organização.",
+    description: "Atuei por conta própria no Mercado Livre, focando em manter minha renda com responsabilidade e dedicação.",
     color: "from-green-500 to-green-700",
     glow: "shadow-green-500/20"
   },
