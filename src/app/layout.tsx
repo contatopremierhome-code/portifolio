@@ -5,9 +5,10 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import ScrollProgress from '@/components/portfolio/scroll-progress';
 
 export const metadata: Metadata = {
-  title: 'Jeovane Costa | Engenharia Civil em Construção',
+  title: 'Jeovane de Oliveira Costa | Engenharia Civil UNINOVE',
   description: 'Portfólio Imersivo de Jeovane de Oliveira Costa - Construindo o futuro da Engenharia Civil.',
 };
 
@@ -27,12 +28,8 @@ export default function RootLayout({
         {children}
         <Toaster />
         
-        {/* Site Entrance & Global Elements */}
-        <div className="fixed top-4 right-4 z-[60] flex items-center gap-2">
-          <div className="bg-white/5 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 text-[10px] font-bold text-primary animate-pulse">
-            SISTEMA OPERACIONAL ATIVO
-          </div>
-        </div>
+        {/* Scroll Progress Indicator */}
+        <ScrollProgress />
 
         {/* Floating WhatsApp Pulsing Button */}
         <Link 
