@@ -13,7 +13,7 @@ const steps = [
   {
     year: "2015 - 2018",
     title: "Vendas e Início da Faculdade",
-    description: "Trabalhei como vendedor enquanto cursava os primeiros semestres na UNINOVE. Precisei parar devido a motivos financeiros.",
+    description: "Trabalhei como vendedor enquanto cursava os primeiros semestres na UNINOVE. Precisei trancar o curso por motivos financeiros.",
     color: "from-blue-500 to-blue-700",
     glow: "shadow-blue-500/20"
   },
@@ -27,7 +27,7 @@ const steps = [
   {
     year: "2025",
     title: "Retorno à UNINOVE",
-    description: "De volta aos estudos com dedicação total para concluir o curso e ingressar no mercado de trabalho.",
+    description: "Retorno aos estudos conciliando com o trabalho, focado em concluir a graduação em Engenharia Civil.",
     color: "from-primary to-blue-400",
     glow: "shadow-primary/20"
   },

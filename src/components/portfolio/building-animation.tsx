@@ -8,7 +8,7 @@ import { useAudio } from "@/hooks/use-audio";
 const buildingSteps = [
   {
     title: "Base de Trabalho",
-    desc: "Início na Santa Efigênia (ambulante): Aprendendo o valor do esforço e do trabalho desde cedo.",
+    desc: "Início na Santa Efigênia (ambulante): Aprendendo o valor do esforço desde cedo.",
     icon: <Ruler className="h-8 w-8" />,
     year: "2014"
   },
@@ -26,13 +26,13 @@ const buildingSteps = [
   },
   {
     title: "Trabalho Independente",
-    desc: "Atuação independente no Mercado Livre: Foco em manter minha renda com responsabilidade e dedicação.",
+    desc: "Atuação independente no Mercado Livre: Foco em responsabilidade e dedicação.",
     icon: <Building2 className="h-8 w-8" />,
     year: "2019-2024"
   },
   {
-    title: "Foco no Diploma",
-    desc: "Retorno aos estudos na UNINOVE com dedicação total para concluir a graduação em Engenharia Civil.",
+    title: "Estudos e Trabalho",
+    desc: "Conciliando o trabalho com o retorno aos estudos na UNINOVE, focado em concluir a graduação em Engenharia Civil.",
     icon: <HardHat className="h-8 w-8" />,
     year: "2025-2026"
   }
