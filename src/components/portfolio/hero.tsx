@@ -71,8 +71,8 @@ export default function HeroSection() {
               className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
               onClick={() => playSound('click')}
             >
-              <MapPin className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/90">Campos Elíseos - São Paulo SP</span>
+              <Milestone className="h-5 w-5 text-primary" />
+              <span className="text-sm font-bold text-white/90">9° Semestre</span>
             </div>
             <div 
               className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
@@ -92,8 +92,8 @@ export default function HeroSection() {
               className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
               onClick={() => playSound('click')}
             >
-              <Milestone className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/90">9° Semestre</span>
+              <MapPin className="h-5 w-5 text-primary" />
+              <span className="text-sm font-bold text-white/90">Campos Elíseos - São Paulo SP</span>
             </div>
           </div>
         </div>
