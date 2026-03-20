@@ -45,7 +45,7 @@ export default function HeroSection() {
           </div>
 
           {/* Tag de Status Profissional - Perfeitamente centralizada abaixo da foto */}
-          <div className="relative z-40">
+          <div className="relative z-40 w-full flex justify-center">
             <div className="bg-accent px-6 py-2 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap animate-pulse-whatsapp">
               Disponível para Estágio
             </div>
@@ -72,34 +72,35 @@ export default function HeroSection() {
             </p>
           </div>
           
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
+          {/* Informações de Perfil Padronizadas */}
+          <div className="grid grid-cols-2 md:flex md:flex-wrap items-center justify-center gap-3 md:gap-4 pt-6 max-w-lg md:max-w-none mx-auto w-full">
             <div 
-              className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
+              className="flex items-center justify-center gap-2 md:gap-3 bg-white/5 px-4 md:px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer w-full md:w-auto"
               onClick={() => playSound('click')}
             >
-              <Milestone className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/90">9° Semestre</span>
+              <Milestone className="h-4 w-4 md:h-5 md:w-5 text-primary shrink-0" />
+              <span className="text-[10px] md:text-sm font-bold text-white/90 whitespace-nowrap">9° Semestre</span>
             </div>
             <div 
-              className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
+              className="flex items-center justify-center gap-2 md:gap-3 bg-white/5 px-4 md:px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer w-full md:w-auto"
               onClick={() => playSound('click')}
             >
-              <GraduationCap className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/90">UNINOVE</span>
+              <GraduationCap className="h-4 w-4 md:h-5 md:w-5 text-primary shrink-0" />
+              <span className="text-[10px] md:text-sm font-bold text-white/90 whitespace-nowrap">UNINOVE</span>
             </div>
             <div 
-              className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
+              className="flex items-center justify-center gap-2 md:gap-3 bg-white/5 px-4 md:px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer w-full md:w-auto"
               onClick={() => playSound('click')}
             >
-              <User className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/90">29 Anos</span>
+              <User className="h-4 w-4 md:h-5 md:w-5 text-primary shrink-0" />
+              <span className="text-[10px] md:text-sm font-bold text-white/90 whitespace-nowrap">29 Anos</span>
             </div>
             <div 
-              className="flex items-center gap-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer"
+              className="flex items-center justify-center gap-2 md:gap-3 bg-white/5 px-4 md:px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer w-full md:w-auto"
               onClick={() => playSound('click')}
             >
-              <MapPin className="h-5 w-5 text-primary" />
-              <span className="text-sm font-bold text-white/90">São Paulo SP</span>
+              <MapPin className="h-4 w-4 md:h-5 md:w-5 text-primary shrink-0" />
+              <span className="text-[10px] md:text-sm font-bold text-white/90 whitespace-nowrap">São Paulo SP</span>
             </div>
           </div>
         </div>
