@@ -14,6 +14,8 @@ import {
 import {
   Dialog,
   DialogContent,
+  DialogTitle,
+  DialogDescription,
 } from "@/components/ui/dialog";
 import { useAudio } from "@/hooks/use-audio";
 
@@ -110,12 +112,15 @@ export default function ProjectsCarousel() {
           </div>
         </Carousel>
 
-        {/* Modal de Visualização de PDF - Foco Total no Conteúdo */}
+        {/* Modal de Visualização de PDF */}
         <Dialog open={!!selectedPdf} onOpenChange={() => setSelectedPdf(null)}>
           <DialogContent className="max-w-[80vw] w-[80vw] h-[85vh] p-0 bg-black border-white/10 overflow-hidden flex flex-col">
+            <DialogTitle className="sr-only">Visualização do Projeto Integrador</DialogTitle>
+            <DialogDescription className="sr-only">
+              Visualizador de documento PDF para o Projeto Integrador de Engenharia Civil.
+            </DialogDescription>
             {selectedPdf && (
               <div className="w-full h-full relative">
-                {/* Iframe ocupando todo o espaço do modal sem botões extras */}
                 <iframe
                   src={selectedPdf}
                   className="w-full h-full border-none"
