@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { MapPin, GraduationCap, User, Milestone, HardHat, Ruler } from 'lucide-react';
+import { MapPin, GraduationCap, User, Milestone, HardHat, Ruler, Hammer, Wrench } from 'lucide-react';
 import { useAudio } from '@/hooks/use-audio';
 
 export default function HeroSection() {
@@ -21,25 +21,56 @@ export default function HeroSection() {
 
       <div className="container relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto space-y-12">
         
-        {/* Foto de Perfil com Efeito de "Construção" */}
+        {/* Foto de Perfil com Efeito de "Construção de Pedreiros Digitais" */}
         <div className="relative group perspective-1000 animate-construct">
+          {/* Mini Pedreiros Orbitando */}
+          <div className="absolute z-30 animate-builder-1 pointer-events-none">
+            <div className="bg-primary p-2 rounded-lg shadow-xl animate-builder-icon">
+              <HardHat size={16} className="text-white" />
+            </div>
+          </div>
+          <div className="absolute z-30 animate-builder-2 pointer-events-none">
+            <div className="bg-accent p-2 rounded-lg shadow-xl animate-builder-icon">
+              <Hammer size={16} className="text-white" />
+            </div>
+          </div>
+          <div className="absolute top-1/2 -left-8 z-30 animate-bounce text-primary/40 hidden md:block">
+            <Ruler size={24} />
+          </div>
+          <div className="absolute top-1/2 -right-8 z-30 animate-bounce text-primary/40 hidden md:block" style={{ animationDelay: '0.5s' }}>
+            <Wrench size={24} />
+          </div>
+
           <div className="absolute -inset-2 bg-gradient-to-r from-primary via-blue-400 to-primary rounded-3xl blur opacity-20 group-hover:opacity-60 transition duration-1000"></div>
+          
           <div className="relative h-56 w-52 md:h-72 md:w-64 rounded-3xl border-2 border-white/10 p-1 bg-card/50 backdrop-blur-md overflow-hidden transform group-hover:rotate-y-6 transition-transform duration-500 shadow-2xl">
-            <div className="relative h-full w-full rounded-2xl overflow-hidden">
+            <div className="relative h-full w-full rounded-2xl overflow-hidden bg-primary/10">
+              {/* Efeito de Blueprint inicial que revela a foto */}
+              <div className="absolute inset-0 z-10 bg-blue-900/40 mix-blend-overlay opacity-50 group-hover:opacity-0 transition-opacity duration-1000"></div>
+              
               <Image
                 src="https://i.imgur.com/J5gtnyg.jpg"
                 alt="Jeovane de Oliveira"
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover transition-all duration-1000 grayscale group-hover:grayscale-0 group-hover:scale-110"
                 priority
               />
-              {/* Overlay de Scan */}
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-transparent h-1/2 w-full animate-scan opacity-0 group-hover:opacity-100"></div>
+              
+              {/* Overlay de Scanline "Assembling" */}
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-transparent to-transparent h-[10%] w-full animate-scan opacity-0 group-hover:opacity-100 z-20"></div>
+              
+              {/* Partículas de Obra */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none z-20">
+                <div className="absolute h-1 w-1 bg-white rounded-full top-1/4 left-1/4 animate-ping"></div>
+                <div className="absolute h-1 w-1 bg-primary rounded-full top-3/4 left-2/3 animate-ping" style={{ animationDelay: '0.2s' }}></div>
+                <div className="absolute h-1 w-1 bg-accent rounded-full top-1/2 left-1/3 animate-ping" style={{ animationDelay: '0.4s' }}></div>
+              </div>
             </div>
           </div>
+
           {/* Tag de Status */}
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1.5 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap">
-            Disponível para Estágio
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1.5 rounded-full text-[10px] font-black text-white uppercase tracking-[0.2em] shadow-xl border border-white/20 whitespace-nowrap z-40">
+            Canteiro de Obras: Em Andamento
           </div>
         </div>
 
