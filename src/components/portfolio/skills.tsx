@@ -45,11 +45,13 @@ export default function SkillsSection() {
     <section id="skills" className="py-40 relative overflow-hidden blueprint-grid">
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-32">
-          <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary/20 text-white text-[12px] md:text-[14px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/40 shadow-[0_0_20px_rgba(59,130,246,0.2)]">
+          {/* Tag com borda e fundo mais visíveis */}
+          <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary/30 text-white text-[12px] md:text-[14px] font-black uppercase tracking-[0.3em] mb-6 border border-primary shadow-[0_0_25px_rgba(59,130,246,0.3)]">
             Conhecimentos Técnicos
           </div>
-          <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic drop-shadow-lg">HARD SKILLS</h2>
-          <p className="text-white/70 uppercase tracking-[0.5em] text-[10px] md:text-xs font-bold">Uso de Ferramentas Técnicas</p>
+          {/* Título com brilho (drop-shadow) para destacar no fundo escuro */}
+          <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">HARD SKILLS</h2>
+          <p className="text-white uppercase tracking-[0.5em] text-[10px] md:text-xs font-bold drop-shadow-md">Uso de Ferramentas Técnicas</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
