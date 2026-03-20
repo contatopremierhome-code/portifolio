@@ -25,26 +25,26 @@ const items = [
     title: "Projeto Integrador",
     category: "Acadêmico",
     image: "https://i.imgur.com/G1IMRC2.jpg",
-    description: "Desenvolvimento técnico multidisciplinar do semestre passado. Clique para visualizar o PDF completo.",
+    description: "Desenvolvimento técnico integrado abrangendo múltiplas disciplinas da engenharia para a criação de soluções estruturais e arquitetônicas eficientes. Um marco na aplicação prática do conhecimento acadêmico.",
     link: "https://drive.google.com/file/d/1rlikXIKjR4LoG6p62k_ZfJpquRQye_fy/preview"
   },
   {
     title: "Projetos AutoCAD",
     category: "Planta Técnica",
     image: "https://picsum.photos/seed/autocad8/800/600",
-    description: "Desenvolvimento de plantas baixas e cortes técnicos."
+    description: "Desenvolvimento de plantas baixas, cortes e detalhamento técnico com precisão rigorosa seguindo as normas vigentes."
   },
   {
     title: "Gestão de Obras",
     category: "Operações",
     image: "https://picsum.photos/seed/const1/800/600",
-    description: "Controle de cronograma e execução de campo."
+    description: "Planejamento estratégico e controle de execução em canteiro de obras, focando em produtividade e qualidade."
   },
   {
     title: "Logística Mercado Livre",
     category: "Experiência",
     image: "https://picsum.photos/seed/logis2/800/600",
-    description: "Otimização de fluxos e gestão de prazos SLA."
+    description: "Otimização de processos logísticos e gestão de fluxos operacionais, garantindo o cumprimento rigoroso de prazos SLA."
   }
 ];
 
