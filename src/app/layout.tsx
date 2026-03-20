@@ -9,8 +9,8 @@ import ScrollProgress from '@/components/portfolio/scroll-progress';
 import Navbar from '@/components/portfolio/navbar';
 
 export const metadata: Metadata = {
-  title: 'Jeovane de Oliveira | Engenharia Civil UNINOVE',
-  description: 'Portfólio Imersivo de Jeovane de Oliveira - Construindo o futuro da Engenharia Civil.',
+  title: 'Jeovane de Oliveira | Engenharia Civil',
+  description: 'Portfólio de Jeovane de Oliveira - Estudante de Engenharia Civil.',
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
 
         {/* Floating WhatsApp Pulsing Button */}
         <Link 
-          href="https://wa.me/5511919854675?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade." 
+          href="https://wa.me/5511919854675?text=Olá%20Jeovane,%20vim%20através%20do%20seu%20Portifólio%20!" 
           target="_blank" 
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 z-50 group"
@@ -43,7 +43,7 @@ export default function RootLayout({
           <div className="absolute -inset-4 bg-[#25D366] blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
           <Button 
             className="h-16 w-16 rounded-full bg-[#25D366] text-white shadow-2xl hover:bg-[#22c55e] transition-all duration-300 hover:scale-110 active:scale-95 animate-pulse-whatsapp border-none p-0 overflow-hidden"
-            aria-label="Contratar para Estágio (WhatsApp)"
+            aria-label="Conversar no WhatsApp"
           >
             <Image 
               src="https://i.imgur.com/Hr6SCB8.png" 

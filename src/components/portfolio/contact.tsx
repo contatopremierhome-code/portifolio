@@ -14,16 +14,16 @@ export default function ContactSection() {
           
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
-              Entrega das Chaves
+              Contato
             </div>
             <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter uppercase italic leading-none">CONTATO</h2>
             <p className="text-2xl text-white/70 leading-relaxed font-light max-w-2xl mx-auto">
-              Pronto para somar na sua equipe com dedicação e <span className="text-white font-bold">foco em aprendizado contínuo</span>.
+              Pronto para somar na sua equipe com dedicação e <span className="text-white font-bold">foco em aprender</span>.
             </p>
             
             <div className="mt-12 p-8 rounded-[2rem] bg-white/5 border border-white/10 max-w-3xl mx-auto">
               <p className="text-xl text-white/80 leading-relaxed font-medium italic">
-                "Agradeço por dedicar seu tempo para conhecer minha trajetória. Caso queira conversar sobre como posso contribuir com sua empresa, ficarei muito satisfeito com o seu contato."
+                "Agradeço por conhecer minha trajetória. Se puder contribuir com sua empresa, ficarei muito satisfeito com seu contato."
               </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function ContactSection() {
             </a>
             
             <a 
-              href="https://wa.me/5511919854675" 
+              href="https://wa.me/5511919854675?text=Olá%20Jeovane,%20vim%20através%20do%20seu%20Portifólio%20!" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-12 rounded-[3rem] glass-card transition-all duration-500 hover:-translate-y-4 group cursor-pointer border-primary/30"
@@ -79,7 +79,7 @@ export default function ContactSection() {
         </div>
 
         <div className="mt-40 pt-12 border-t border-white/10 text-[14px] md:text-[16px] uppercase tracking-[0.5em] text-white font-black drop-shadow-lg">
-          <p>© {new Date().getFullYear()} JEOVANE DE OLIVEIRA | ENGENHARIA CIVIL UNINOVE.</p>
+          <p>© {new Date().getFullYear()} JEOVANE DE OLIVEIRA | ENGENHARIA CIVIL.</p>
         </div>
       </div>
     </footer>
