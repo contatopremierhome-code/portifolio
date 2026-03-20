@@ -26,7 +26,7 @@ const skills = [
     color: "#0696D7", 
     class: "glow-revit",
     logo: "https://cdn.simpleicons.org/autodeskrevit/0696D7",
-    desc: "Iniciando estudos em modelagem da construção."
+    desc: "Modelagem da construção e noções de projetos em plataforma BIM."
   },
   { 
     name: "MS-Project", 
@@ -34,7 +34,7 @@ const skills = [
     color: "#31752F", 
     class: "glow-msproject",
     logo: "https://i.imgur.com/jMT5oMV.png",
-    desc: "Conhecimentos iniciais em cronogramas de obra."
+    desc: "Conhecimentos em cronogramas de obra e planejamento estratégico."
   },
 ];
 
@@ -45,12 +45,12 @@ export default function SkillsSection() {
     <section id="skills" className="py-20 md:py-40 relative overflow-hidden bg-black/40">
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-16 md:mb-32">
-          <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-white/20 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-white/20 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
             Conhecimentos Técnicos
           </div>
-          <h2 className="text-4xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">HARD SKILLS</h2>
+          <h2 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">HARD SKILLS</h2>
           <div className="h-2 md:h-3 w-24 md:w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
-          <p className="mt-8 text-white/60 font-black uppercase tracking-[0.4em] text-[10px] md:text-xs">Uso de Ferramentas Técnicas</p>
+          <p className="mt-8 text-white font-black uppercase tracking-[0.4em] text-[10px] md:text-xs">Uso de Ferramentas Técnicas</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">

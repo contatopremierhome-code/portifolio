@@ -13,13 +13,13 @@ export default function ContactSection() {
         <div className="max-w-4xl mx-auto space-y-20">
           
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-white/20 shadow-[0_0_30px_rgba(59,130,246,0.6)]">
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-white/20 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
               Contato Profissional
             </div>
-            <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter uppercase italic leading-none drop-shadow-[0_0_25px_rgba(255,255,255,0.3)]">
+            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
               CONTATO
             </h2>
-            <div className="h-2 md:h-3 w-24 md:w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.6)]"></div>
+            <div className="h-2 md:h-3 w-24 md:w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

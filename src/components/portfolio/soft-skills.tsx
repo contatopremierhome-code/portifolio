@@ -34,10 +34,10 @@ export default function SoftSkillsSection() {
     <section id="soft-skills" className="py-20 md:py-40 relative bg-black/60 overflow-hidden">
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-16 md:mb-32">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-white/20 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
             Diferenciais
           </div>
-          <h2 className="text-4xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">SOFT SKILLS</h2>
+          <h2 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">SOFT SKILLS</h2>
           <div className="h-2 md:h-3 w-24 md:w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
         </div>
 
@@ -59,7 +59,7 @@ export default function SoftSkillsSection() {
                 
                 <div className="space-y-4">
                   <h3 className="text-2xl font-black text-white group-hover:text-primary transition-colors uppercase italic tracking-tighter">{skill.name}</h3>
-                  <p className="text-white leading-relaxed text-base font-bold drop-shadow-md">
+                  <p className="text-white leading-relaxed text-base font-black drop-shadow-xl">
                     {skill.description}
                   </p>
                 </div>
