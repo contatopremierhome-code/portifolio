@@ -1,4 +1,3 @@
-
 'use client';
 
 import { Mail, MapPin, Key } from 'lucide-react';
@@ -21,6 +20,12 @@ export default function ContactSection() {
             <p className="text-2xl text-white/70 leading-relaxed font-light max-w-2xl mx-auto">
               Pronto para somar na sua equipe com eficiência técnica e <span className="text-white font-bold">autogestão comprovada</span>.
             </p>
+            
+            <div className="mt-12 p-8 rounded-[2rem] bg-white/5 border border-white/10 max-w-3xl mx-auto">
+              <p className="text-xl text-white/80 leading-relaxed font-medium italic">
+                "Agradeço imensamente por dedicar seu tempo para conhecer minha trajetória e competências. Caso tenha interesse em agendarmos uma reunião ou conversar sobre como posso contribuir com sua empresa, ficarei muito feliz e satisfeito com o seu contato."
+              </p>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
