@@ -55,7 +55,7 @@ export default function AboutSection() {
                 
                 <div className="space-y-8 text-xl md:text-2xl text-white/90 leading-relaxed text-justify font-medium">
                   <p className="first-letter:text-7xl first-letter:font-black first-letter:text-primary first-letter:mr-3 first-letter:float-left">
-                    Minha caminhada profissional sempre foi baseada no esforço. Comecei cedo, trabalhando na <span className="text-white font-bold">Santa Efigênia como ambulante</span>, o que me deu uma base forte de dedicação e pé no chão desde o início.
+                    Minha caminhada profissional sempre foi baseada no esforço. Comecei cedo, trabalhando como ambulante, o que me deu uma base forte de dedicação e pé no chão desde o início.
                   </p>
                   
                   <p>
@@ -68,7 +68,7 @@ export default function AboutSection() {
                     </div>
                     <h4 className="text-primary font-black uppercase text-xs tracking-[0.4em] mb-6">Dedicação Contínua</h4>
                     <p className="relative z-10 text-white/90">
-                      Entre <span className="text-white font-bold">2015 e 2018</span>, trabalhei como <span className="text-white font-bold">vendedor</span> enquanto iniciava a faculdade. Precisei trancar o curso, mas nunca parei de trabalhar. Atuo por conta própria no <span className="text-white font-black italic">Mercado Livre</span> desde <span className="text-white font-bold">2019 até hoje</span>, e em 2025 retornei à UNINOVE para concluir minha formação em 2026, conciliando o trabalho com os estudos.
+                      Entre <span className="text-white font-bold">2015 e 2018</span>, trabalhei como <span className="text-white font-bold">vendedor</span> enquanto iniciava a faculdade. Precisei trancar o curso na época, mas nunca parei de trabalhar. Atuo por conta própria no <span className="text-white font-black italic">Mercado Livre</span> desde <span className="text-white font-bold">2019 até hoje</span>, e em 2025 retornei à <span className="text-white font-bold">universidade</span> para concluir minha formação em 2026, conciliando o trabalho com os estudos.
                     </p>
                   </div>
                 </div>

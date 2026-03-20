@@ -6,28 +6,28 @@ const steps = [
   {
     year: "2014",
     title: "AutoCAD e Primeiro Contato",
-    description: "Curso no SENAC e experiência de 3 meses em escritório de engenharia, meu primeiro contato prático com projetos.",
+    description: "Curso no SENAC e experiência de 3 meses em escritório de engenharia, meu primeiro contato prático.",
     color: "from-red-500 to-red-700",
     glow: "shadow-red-500/20"
   },
   {
     year: "2015 - 2018",
-    title: "Vendas e Início da Faculdade",
-    description: "Trabalhei como vendedor enquanto cursava os primeiros semestres na UNINOVE. Precisei trancar o curso na época.",
+    title: "Vendas e Faculdade",
+    description: "Trabalhei como vendedor enquanto cursava os primeiros semestres da faculdade. Precisei trancar o curso na época.",
     color: "from-blue-500 to-blue-700",
     glow: "shadow-blue-500/20"
   },
   {
     year: "2019 - Atualmente",
     title: "Trabalho Independente",
-    description: "Atuação no Mercado Livre, mantendo a renda com responsabilidade e dedicação constante até hoje.",
+    description: "Atuação no Mercado Livre, mantendo o foco no trabalho e dedicação constante até hoje.",
     color: "from-green-500 to-green-700",
     glow: "shadow-green-500/20"
   },
   {
     year: "2025",
-    title: "Retorno à UNINOVE",
-    description: "Retorno aos estudos conciliando com o trabalho atual, focado em concluir a graduação em Engenharia Civil.",
+    title: "Retorno aos Estudos",
+    description: "Retorno à faculdade conciliando com o trabalho atual, focado em concluir a graduação em Engenharia Civil.",
     color: "from-primary to-blue-400",
     glow: "shadow-primary/20"
   },

@@ -7,32 +7,32 @@ import { useAudio } from "@/hooks/use-audio";
 
 const buildingSteps = [
   {
-    title: "Base de Trabalho",
-    desc: "Início na Santa Efigênia (ambulante): Aprendendo o valor do esforço desde cedo.",
+    title: "Início Prático",
+    desc: "Trabalho como ambulante: Aprendendo o valor do esforço desde cedo.",
     icon: <Ruler className="h-8 w-8" />,
     year: "Início"
   },
   {
-    title: "Primeiro Contato Técnico",
-    desc: "Curso de AutoCAD no SENAC e experiência de 3 meses em escritório, meu primeiro contato prático na área.",
+    title: "Primeiro Registro",
+    desc: "Curso de AutoCAD no SENAC e experiência de 3 meses em escritório de engenharia.",
     icon: <Hammer className="h-8 w-8" />,
     year: "2014"
   },
   {
     title: "Vendas e Estudos",
-    desc: "Trabalho como vendedor conciliando com a faculdade, que precisei trancar temporariamente na época.",
+    desc: "Trabalho como vendedor conciliando com os primeiros semestres da faculdade.",
     icon: <ShoppingBag className="h-8 w-8" />,
     year: "2015-2018"
   },
   {
     title: "Trabalho Independente",
-    desc: "Atuação independente no Mercado Livre desde 2019: Mantendo a dedicação constante.",
+    desc: "Atuação no Mercado Livre desde 2019: Dedicação constante ao trabalho.",
     icon: <Building2 className="h-8 w-8" />,
     year: "2019-Atualmente"
   },
   {
     title: "Foco no Diploma",
-    desc: "Conciliando o trabalho com o retorno aos estudos na UNINOVE para concluir a graduação em Engenharia Civil.",
+    desc: "Trabalhando e retornando aos estudos na faculdade para concluir a graduação em Engenharia Civil.",
     icon: <HardHat className="h-8 w-8" />,
     year: "2025-2026"
   }
