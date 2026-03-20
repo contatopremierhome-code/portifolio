@@ -54,9 +54,6 @@ export default function HeroSection() {
               <span className="absolute -bottom-2 left-0 w-full h-2 bg-primary/20 rounded-full blur-sm"></span>
             </span>
           </h1>
-          <p className="text-2xl md:text-3xl text-white/90 font-light tracking-widest uppercase">
-            Aspirante a Engenheiro Civil
-          </p>
 
           <div className="max-w-2xl mx-auto p-8 rounded-[2.5rem] glass-card border-primary/20 relative overflow-hidden group">
             <div className="absolute top-0 left-0 w-2 h-full bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
@@ -65,7 +62,7 @@ export default function HeroSection() {
               "Dedicado, Analítico e Orientado a Resultados."
             </p>
             <p className="text-white/80 mt-4 leading-relaxed text-lg font-medium">
-              Além da sólida formação acadêmica, sou um profissional moldado pela experiência prática e pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela habilidade de liderar processos com independência.
+              Além da sólida formação acadêmica, sou um profissional moldado pela experiência prática e pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela habilidade de liderar processos com independência operacional.
             </p>
           </div>
           
