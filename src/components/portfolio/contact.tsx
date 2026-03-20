@@ -18,7 +18,7 @@ export default function ContactSection() {
             </div>
             <h2 className="text-6xl md:text-9xl font-black text-white tracking-tighter uppercase italic leading-none">CONTATO</h2>
             <p className="text-2xl text-white/70 leading-relaxed font-light max-w-2xl mx-auto">
-              Pronto para somar na sua equipe com eficiência técnica e <span className="text-white font-bold">autogestão comprovada</span>.
+              Pronto para somar na sua equipe com eficiência técnica e <span className="text-white font-bold">foco em resultados independentes</span>.
             </p>
             
             <div className="mt-12 p-8 rounded-[2rem] bg-white/5 border border-white/10 max-w-3xl mx-auto">

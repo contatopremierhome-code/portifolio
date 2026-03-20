@@ -20,7 +20,7 @@ const steps = [
   {
     year: "2019 - 2024",
     title: "Gestão Autônoma & Mercado Livre",
-    description: "Desenvolvimento de competências críticas de logística, gestão financeira e autogestão de alto nível.",
+    description: "Desenvolvimento de competências críticas de logística, gestão financeira e alto nível de protagonismo profissional.",
     color: "from-green-500 to-green-700",
     glow: "shadow-green-500/20"
   },
@@ -34,7 +34,7 @@ const steps = [
   {
     year: "2026",
     title: "Conclusão da Graduação (Previsão)",
-    description: "Fase final da formação acadêmica e colação de grau, consolidando o conhecimento técnico para atuação plena como Engenheiro Civil.",
+    description: "Fase final da formação acadêmica e colação de grau, consolidando o conhecimento técnico para atuação plena no setor.",
     color: "from-yellow-400 to-yellow-600",
     glow: "shadow-yellow-500/20"
   }

@@ -55,7 +55,7 @@ export default function HeroSection() {
             </span>
           </h1>
           <p className="text-2xl md:text-3xl text-white/90 font-light tracking-widest uppercase">
-            Futuro Engenheiro Civil
+            Aspirante a Engenheiro Civil
           </p>
 
           <div className="max-w-2xl mx-auto p-8 rounded-[2.5rem] glass-card border-primary/20 relative overflow-hidden group">
@@ -65,7 +65,7 @@ export default function HeroSection() {
               "Dedicado, Analítico e Orientado a Resultados."
             </p>
             <p className="text-white/80 mt-4 leading-relaxed text-lg font-medium">
-              Mais do que um estudante de Engenharia Civil, sou um profissional formado pela prática e pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela capacidade de autogestão.
+              Além da sólida formação acadêmica, sou um profissional moldado pela experiência prática e pela superação. Minha trajetória é pautada pelo compromisso com a excelência técnica e pela habilidade de liderar processos com independência.
             </p>
           </div>
           

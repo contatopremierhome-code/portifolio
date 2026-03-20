@@ -50,7 +50,7 @@ export default function AboutSection() {
                   <div className="h-20 w-20 rounded-3xl bg-primary/10 flex items-center justify-center text-primary shadow-inner">
                     <HardHat size={40} />
                   </div>
-                  <h3 className="text-3xl md:text-5xl text-white font-black tracking-tighter uppercase italic">Futuro Engenheiro Civil</h3>
+                  <h3 className="text-3xl md:text-5xl text-white font-black tracking-tighter uppercase italic">Engenharia em Formação</h3>
                 </div>
                 
                 <div className="space-y-8 text-xl md:text-2xl text-white/90 leading-relaxed text-justify font-medium">
@@ -68,7 +68,7 @@ export default function AboutSection() {
                     </div>
                     <h4 className="text-primary font-black uppercase text-xs tracking-[0.4em] mb-6">Determinação e Foco</h4>
                     <p className="relative z-10 text-white/90">
-                      Entre <span className="text-white font-bold">2015 e 2018</span>, iniciei a graduação em Engenharia Civil, conciliando os estudos com a atuação como <span className="text-primary font-black">vendedor</span>. Essa fase foi crucial para moldar minha disciplina e habilidades interpessoais. Após uma pausa estratégica, retornei à UNINOVE no <span className="text-primary font-black">segundo semestre de 2025</span> com formatura prevista para <span className="text-white font-black">2026</span>. Atualmente, atuo de forma autônoma no <span className="text-white font-black italic">Mercado Livre</span>.
+                      Entre <span className="text-white font-bold">2015 e 2018</span>, iniciei a graduação acadêmica, conciliando os estudos com a atuação como <span className="text-primary font-black">vendedor</span>. Essa fase foi crucial para moldar minha disciplina e habilidades interpessoais. Após uma pausa estratégica, retornei à UNINOVE no <span className="text-primary font-black">segundo semestre de 2025</span> com formatura prevista para <span className="text-white font-black">2026</span>. Atualmente, atuo de forma independente no <span className="text-white font-black italic">Mercado Livre</span>.
                     </p>
                   </div>
                 </div>

@@ -6,8 +6,8 @@ import { useAudio } from "@/hooks/use-audio";
 
 const softSkills = [
   {
-    name: "Autogestão",
-    description: "Capacidade de liderar o próprio fluxo de trabalho, priorizando tarefas com autonomia e eficácia técnica.",
+    name: "Liderança Própria",
+    description: "Capacidade de conduzir o próprio fluxo de trabalho, priorizando tarefas com independência e eficácia técnica.",
     icon: <Workflow className="h-10 w-10" />,
   },
   {
