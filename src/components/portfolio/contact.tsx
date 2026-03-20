@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Mail, MapPin, Key } from 'lucide-react';
@@ -71,7 +72,7 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className="mt-40 pt-12 border-t border-white/5 text-[12px] uppercase tracking-[0.5em] text-white/70 font-black">
+        <div className="mt-40 pt-12 border-t border-white/10 text-[14px] md:text-[16px] uppercase tracking-[0.5em] text-white font-black drop-shadow-lg">
           <p>© {new Date().getFullYear()} JEOVANE DE OLIVEIRA COSTA | ENGENHARIA CIVIL UNINOVE.</p>
         </div>
       </div>

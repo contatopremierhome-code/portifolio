@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from "react";
@@ -109,11 +110,12 @@ export default function ProjectsCarousel() {
           </div>
         </Carousel>
 
-        {/* Modal de Visualização de PDF Otimizado - Ocupando 80% */}
+        {/* Modal de Visualização de PDF - Foco Total no Conteúdo */}
         <Dialog open={!!selectedPdf} onOpenChange={() => setSelectedPdf(null)}>
-          <DialogContent className="max-w-[80vw] w-[80vw] h-[85vh] p-0 bg-black border-white/10 overflow-hidden">
+          <DialogContent className="max-w-[80vw] w-[80vw] h-[85vh] p-0 bg-black border-white/10 overflow-hidden flex flex-col">
             {selectedPdf && (
-              <div className="w-full h-full">
+              <div className="w-full h-full relative">
+                {/* Iframe ocupando todo o espaço do modal sem botões extras */}
                 <iframe
                   src={selectedPdf}
                   className="w-full h-full border-none"
