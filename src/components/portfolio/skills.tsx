@@ -45,7 +45,7 @@ export default function SkillsSection() {
     <section id="skills" className="py-40 relative overflow-hidden blueprint-grid">
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-32">
-          {/* Tag com borda e fundo mais visíveis */}
+          {/* Tag com brilho e texto branco puro para visibilidade máxima */}
           <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-primary/30 text-white text-[12px] md:text-[14px] font-black uppercase tracking-[0.3em] mb-6 border border-primary shadow-[0_0_25px_rgba(59,130,246,0.3)]">
             Conhecimentos Técnicos
           </div>
@@ -79,10 +79,11 @@ export default function SkillsSection() {
                 
                 <div className="text-center relative z-10">
                   <h3 className="font-black text-white text-xl mb-2 tracking-tight">{skill.name}</h3>
-                  <div className="inline-block px-4 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-black uppercase tracking-widest text-primary mb-4">
+                  <div className="inline-block px-4 py-1 rounded-full bg-white/10 border border-white/20 text-[10px] font-black uppercase tracking-widest text-primary mb-4">
                     {skill.level}
                   </div>
-                  <p className="text-xs text-muted-foreground leading-relaxed max-w-[180px] mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  {/* Texto que surge: Alterado de text-muted-foreground para text-white/90 para brilhar no fundo escuro */}
+                  <p className="text-xs text-white/90 leading-relaxed max-w-[180px] mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-medium">
                     {skill.desc}
                   </p>
                 </div>

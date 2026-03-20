@@ -53,7 +53,7 @@ export default function HeroSection() {
         </div>
 
         <div className="space-y-6 animate-construct" style={{ animationDelay: '0.2s' }}>
-          <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white leading-none uppercase">
+          <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white leading-none uppercase drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
             JEOVANE <br/> 
             <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
               DE OLIVEIRA
@@ -67,7 +67,7 @@ export default function HeroSection() {
             <p className="text-white text-xl font-bold leading-tight italic">
               "Trabalhador, dedicado e em constante aprendizado."
             </p>
-            <p className="text-white/80 mt-4 leading-relaxed text-lg font-medium">
+            <p className="text-white/90 mt-4 leading-relaxed text-lg font-medium">
               Estudante de Engenharia Civil, proativo e organizado, buscando aplicar meus conhecimentos e crescer profissionalmente. Com facilidade de aprendizado e familiaridade com ferramentas técnicas, desejo contribuir para a eficiência da equipe.
             </p>
           </div>
@@ -75,32 +75,32 @@ export default function HeroSection() {
           {/* Informações de Perfil Padronizadas */}
           <div className="grid grid-cols-2 md:flex md:flex-wrap items-center justify-center gap-3 md:gap-4 pt-6 max-w-lg md:max-w-none mx-auto w-full">
             <div 
-              className="flex items-center justify-center gap-2 md:gap-3 bg-white/5 px-4 md:px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer w-full md:w-auto"
+              className="flex items-center justify-center gap-2 md:gap-3 bg-white/10 px-4 md:px-6 py-3 rounded-2xl border border-white/20 hover:border-primary/50 transition-colors cursor-pointer w-full md:w-auto shadow-lg"
               onClick={() => playSound('click')}
             >
               <Milestone className="h-4 w-4 md:h-5 md:w-5 text-primary shrink-0" />
-              <span className="text-[10px] md:text-sm font-bold text-white/90 whitespace-nowrap">9° Semestre</span>
+              <span className="text-[10px] md:text-sm font-bold text-white whitespace-nowrap">9° Semestre</span>
             </div>
             <div 
-              className="flex items-center justify-center gap-2 md:gap-3 bg-white/5 px-4 md:px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer w-full md:w-auto"
+              className="flex items-center justify-center gap-2 md:gap-3 bg-white/10 px-4 md:px-6 py-3 rounded-2xl border border-white/20 hover:border-primary/50 transition-colors cursor-pointer w-full md:w-auto shadow-lg"
               onClick={() => playSound('click')}
             >
               <GraduationCap className="h-4 w-4 md:h-5 md:w-5 text-primary shrink-0" />
-              <span className="text-[10px] md:text-sm font-bold text-white/90 whitespace-nowrap">UNINOVE</span>
+              <span className="text-[10px] md:text-sm font-bold text-white whitespace-nowrap">UNINOVE</span>
             </div>
             <div 
-              className="flex items-center justify-center gap-2 md:gap-3 bg-white/5 px-4 md:px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer w-full md:w-auto"
+              className="flex items-center justify-center gap-2 md:gap-3 bg-white/10 px-4 md:px-6 py-3 rounded-2xl border border-white/20 hover:border-primary/50 transition-colors cursor-pointer w-full md:w-auto shadow-lg"
               onClick={() => playSound('click')}
             >
               <User className="h-4 w-4 md:h-5 md:w-5 text-primary shrink-0" />
-              <span className="text-[10px] md:text-sm font-bold text-white/90 whitespace-nowrap">29 Anos</span>
+              <span className="text-[10px] md:text-sm font-bold text-white whitespace-nowrap">29 Anos</span>
             </div>
             <div 
-              className="flex items-center justify-center gap-2 md:gap-3 bg-white/5 px-4 md:px-6 py-3 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors cursor-pointer w-full md:w-auto"
+              className="flex items-center justify-center gap-2 md:gap-3 bg-white/10 px-4 md:px-6 py-3 rounded-2xl border border-white/20 hover:border-primary/50 transition-colors cursor-pointer w-full md:w-auto shadow-lg"
               onClick={() => playSound('click')}
             >
               <MapPin className="h-4 w-4 md:h-5 md:w-5 text-primary shrink-0" />
-              <span className="text-[10px] md:text-sm font-bold text-white/90 whitespace-nowrap">São Paulo SP</span>
+              <span className="text-[10px] md:text-sm font-bold text-white whitespace-nowrap">São Paulo SP</span>
             </div>
           </div>
         </div>
