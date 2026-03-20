@@ -12,8 +12,8 @@ const steps = [
   },
   {
     year: "2015 - 2018",
-    title: "Início da Graduação",
-    description: "Foco total em fundamentos, cálculos estruturais e física aplicada na UNINOVE.",
+    title: "Graduação & Atuação Comercial",
+    description: "Início da faculdade na UNINOVE, conciliando os desafios acadêmicos com o trabalho como vendedor, desenvolvendo alta capacidade de negociação.",
     color: "from-blue-500 to-blue-700",
     glow: "shadow-blue-500/20"
   },

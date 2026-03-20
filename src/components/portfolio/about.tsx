@@ -1,7 +1,7 @@
 'use client';
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Quote, Hammer, HardHat, Ruler } from "lucide-react";
+import { Quote, Hammer, HardHat, Ruler, ShoppingBag } from "lucide-react";
 import { useAudio } from "@/hooks/use-audio";
 import Image from "next/image";
 
@@ -64,11 +64,11 @@ export default function AboutSection() {
 
                   <div className="p-10 rounded-[2.5rem] bg-white/5 border border-white/10 mt-16 relative overflow-hidden group/box">
                     <div className="absolute -top-10 -right-10 text-white/5 group-hover/box:text-primary/10 transition-colors duration-700">
-                      <Ruler size={200} />
+                      <ShoppingBag size={200} />
                     </div>
                     <h4 className="text-primary font-black uppercase text-xs tracking-[0.4em] mb-6">Determinação e Foco</h4>
                     <p className="relative z-10 text-white/90">
-                      Em <span className="text-white font-bold">2015</span> iniciei o Curso de Engenharia Civil. Faltando apenas 1 ano para concluir, precisei trancar a faculdade. No <span className="text-primary font-black">segundo semestre de 2025</span> retornei com força total e me formarei em <span className="text-white font-black">2026</span>. Atualmente, trabalho de forma autônoma através do <span className="text-white font-black italic">Mercado Livre</span>.
+                      Entre <span className="text-white font-bold">2015 e 2018</span>, iniciei a graduação em Engenharia Civil, conciliando os estudos com a atuação como <span className="text-primary font-black">vendedor</span>. Essa fase foi crucial para moldar minha disciplina e habilidades interpessoais. Após uma pausa estratégica, retornei à UNINOVE no <span className="text-primary font-black">segundo semestre de 2025</span> com formatura prevista para <span className="text-white font-black">2026</span>. Atualmente, atuo de forma autônoma no <span className="text-white font-black italic">Mercado Livre</span>.
                     </p>
                   </div>
                 </div>
