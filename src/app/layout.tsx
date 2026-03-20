@@ -8,8 +8,8 @@ import Image from 'next/image';
 import ScrollProgress from '@/components/portfolio/scroll-progress';
 
 export const metadata: Metadata = {
-  title: 'Jeovane de Oliveira Costa | Engenharia Civil UNINOVE',
-  description: 'Portfólio Imersivo de Jeovane de Oliveira Costa - Construindo o futuro da Engenharia Civil.',
+  title: 'Jeovane de Oliveira | Engenharia Civil UNINOVE',
+  description: 'Portfólio Imersivo de Jeovane de Oliveira - Construindo o futuro da Engenharia Civil.',
 };
 
 export default function RootLayout({

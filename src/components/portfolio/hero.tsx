@@ -28,7 +28,7 @@ export default function HeroSection() {
             <div className="relative h-full w-full rounded-2xl overflow-hidden">
               <Image
                 src="https://i.imgur.com/J5gtnyg.jpg"
-                alt="Jeovane de Oliveira Costa"
+                alt="Jeovane de Oliveira"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                 priority
@@ -45,9 +45,9 @@ export default function HeroSection() {
 
         <div className="space-y-6 animate-construct" style={{ animationDelay: '0.2s' }}>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white leading-none uppercase">
-            JEOVANE <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">DE</span> OLIVEIRA <br/> 
+            JEOVANE <br/> 
             <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
-              COSTA
+              DE OLIVEIRA
               <span className="absolute -bottom-2 left-0 w-full h-2 bg-primary/20 rounded-full blur-sm"></span>
             </span>
           </h1>

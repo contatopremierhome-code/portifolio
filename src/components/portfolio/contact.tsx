@@ -79,7 +79,7 @@ export default function ContactSection() {
         </div>
 
         <div className="mt-40 pt-12 border-t border-white/10 text-[14px] md:text-[16px] uppercase tracking-[0.5em] text-white font-black drop-shadow-lg">
-          <p>© {new Date().getFullYear()} JEOVANE DE OLIVEIRA COSTA | ENGENHARIA CIVIL UNINOVE.</p>
+          <p>© {new Date().getFullYear()} JEOVANE DE OLIVEIRA | ENGENHARIA CIVIL UNINOVE.</p>
         </div>
       </div>
     </footer>
