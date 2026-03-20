@@ -44,8 +44,8 @@ export default function HeroSection() {
         </div>
 
         <div className="space-y-6 animate-construct" style={{ animationDelay: '0.2s' }}>
-          <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white leading-none">
-            JEOVANE DE OLIVEIRA <br/> 
+          <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white leading-none uppercase">
+            JEOVANE <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">DE</span> OLIVEIRA <br/> 
             <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
               COSTA
               <span className="absolute -bottom-2 left-0 w-full h-2 bg-primary/20 rounded-full blur-sm"></span>
