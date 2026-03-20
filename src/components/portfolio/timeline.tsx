@@ -6,35 +6,35 @@ const steps = [
   {
     year: "2014",
     title: "Especialização AutoCAD (SENAC)",
-    description: "Início da jornada técnica. Contratação imediata por escritório de engenharia devido à excelência nos projetos.",
+    description: "Início do aprendizado técnico. Comecei a trabalhar em um escritório de engenharia desenhando projetos no computador.",
     color: "from-red-500 to-red-700",
     glow: "shadow-red-500/20"
   },
   {
     year: "2015 - 2018",
-    title: "Graduação & Atuação Comercial",
-    description: "Início da faculdade na UNINOVE, conciliando os desafios acadêmicos com o trabalho como vendedor, desenvolvendo habilidades interpessoais e atendimento.",
+    title: "Vendas & Início da Faculdade",
+    description: "Trabalhei como vendedor e iniciei a graduação na UNINOVE. Devido a motivos financeiros, precisei trancar o curso temporariamente.",
     color: "from-blue-500 to-blue-700",
     glow: "shadow-blue-500/20"
   },
   {
     year: "2019 - 2024",
-    title: "Gestão Autônoma & Mercado Livre",
-    description: "Desenvolvimento de competências de logística, gestão financeira e desenvolvimento de autonomia e responsabilidade profissional.",
+    title: "Trabalho Independente",
+    description: "Atuei no Mercado Livre, focando em organização e responsabilidade para manter meu próprio trabalho e renda.",
     color: "from-green-500 to-green-700",
     glow: "shadow-green-500/20"
   },
   {
     year: "2025",
-    title: "Retomada UNINOVE",
-    description: "Retorno aos estudos com foco em BIM (Revit) e inovação no setor da construção civil.",
+    title: "Retorno à UNINOVE",
+    description: "Voltei aos estudos com dedicação total para aprender as novas ferramentas do setor e me formar.",
     color: "from-primary to-blue-400",
     glow: "shadow-primary/20"
   },
   {
     year: "2026",
-    title: "Conclusão da Graduação (Previsão)",
-    description: "Fase final da formação acadêmica e colação de grau, consolidando o conhecimento técnico para atuação plena no setor.",
+    title: "Formatura (Previsão)",
+    description: "Conclusão do curso de Engenharia Civil, buscando ingressar no mercado para aprender e contribuir na prática.",
     color: "from-yellow-400 to-yellow-600",
     glow: "shadow-yellow-500/20"
   }
@@ -51,7 +51,7 @@ export default function TimelineSection() {
       <div className="container mx-auto px-4 reveal">
         <div className="text-center mb-32">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
-            Progressão Estrutural
+            Minha Evolução
           </div>
           <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic">Evolução</h2>
           <div className="h-3 w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
@@ -76,11 +76,11 @@ export default function TimelineSection() {
                   <div className={`glass-card p-10 rounded-[3rem] border-white/5 transition-all duration-700 group-hover:border-primary/40 group-hover:bg-primary/5 group-hover:translate-y-[-15px] shadow-2xl relative ${step.glow}`}>
                     {/* Corner Indicators */}
                     <div className="absolute top-8 right-8 text-[10px] font-mono text-primary/30 group-hover:text-primary transition-colors">
-                      STP_{index + 1}
+                      ETAPA_{index + 1}
                     </div>
                     
                     <div className="flex items-center gap-4 mb-8">
-                      <span className={`px-6 py-2 rounded-full text-xs font-black text-white bg-gradient-to-r ${step.color} shadow-xl tracking-tighter border border-white/10`}>
+                      <span className={`px-6 py-2 rounded-full text-[10px] font-black text-white bg-gradient-to-r ${step.color} shadow-xl tracking-tighter border border-white/10`}>
                         {step.year}
                       </span>
                       <div className="h-px flex-1 bg-white/10 group-hover:bg-primary/30 transition-colors"></div>

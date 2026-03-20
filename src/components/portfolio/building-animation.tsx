@@ -2,31 +2,37 @@
 
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { Hammer, Ruler, HardHat, Building2 } from "lucide-react";
+import { Hammer, Ruler, HardHat, Building2, ShoppingBag } from "lucide-react";
 import { useAudio } from "@/hooks/use-audio";
 
 const buildingSteps = [
   {
     title: "Fundação Comercial",
-    desc: "Início na Santa Efigênia (ambulante): Base fundamental para o desenvolvimento de resiliência e visão prática de mercado.",
+    desc: "Início na Santa Efigênia (ambulante): Base fundamental para o desenvolvimento de resiliência e visão prática de trabalho.",
     icon: <Ruler className="h-8 w-8" />,
     year: "2014"
   },
   {
-    title: "Estrutura Projetual",
-    desc: "Especialização em AutoCAD no SENAC e atuação em escritório técnico, validando a capacidade de entrega profissional.",
+    title: "Estrutura Técnica",
+    desc: "AutoCAD no SENAC e atuação em escritório, aprendendo a rotina de projetos e desenho técnico.",
     icon: <Hammer className="h-8 w-8" />,
     year: "2014-2015"
   },
   {
-    title: "Gestão Logística",
-    desc: "Atuação autônoma no Mercado Livre: Aprimoramento de competências em logística e gestão financeira estratégica.",
+    title: "Experiência em Vendas",
+    desc: "Trabalho como vendedor conciliando com o início da faculdade, aprendendo a lidar com público e atendimento.",
+    icon: <ShoppingBag className="h-8 w-8" />,
+    year: "2015-2018"
+  },
+  {
+    title: "Trabalho Autônomo",
+    desc: "Atuação independente no Mercado Livre: Foco em responsabilidade, logística e organização de prazos.",
     icon: <Building2 className="h-8 w-8" />,
     year: "2019-2024"
   },
   {
-    title: "Retomada UNINOVE",
-    desc: "Retorno estratégico aos estudos no segundo semestre de 2025, com foco total na formação como Engenheiro Civil em 2026.",
+    title: "Foco na Formação",
+    desc: "Retorno aos estudos na UNINOVE, com dedicação total para concluir a graduação em Engenharia Civil.",
     icon: <HardHat className="h-8 w-8" />,
     year: "2025-2026"
   }
@@ -55,7 +61,7 @@ export default function BuildingAnimation() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-32 reveal">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-6 border border-primary/20">
-            Canteiro de Obras Digital
+            Minha Trajetória
           </div>
           <h2 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white uppercase italic leading-none">CONSTRUINDO</h2>
           <div className="h-3 w-40 bg-primary mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]"></div>
@@ -82,10 +88,8 @@ export default function BuildingAnimation() {
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="text-primary transform group-hover:scale-125 transition-transform duration-500">{step.icon}</div>
-                  <span className="text-xs font-black text-white uppercase tracking-[0.2em]">{step.title}</span>
+                  <span className="text-[10px] font-black text-white uppercase tracking-[0.2em]">{step.title}</span>
                 </div>
-                <div className="absolute top-0 left-10 w-px h-full bg-white/5 group-hover:bg-primary/20 transition-colors"></div>
-                <div className="absolute top-0 right-10 w-px h-full bg-white/5 group-hover:bg-primary/20 transition-colors"></div>
               </div>
             ))}
 
@@ -93,7 +97,7 @@ export default function BuildingAnimation() {
           </div>
 
           {/* Details Side */}
-          <div className="space-y-10">
+          <div className="space-y-6">
             {buildingSteps.map((step, index) => (
               <Card 
                 key={index} 
@@ -101,12 +105,12 @@ export default function BuildingAnimation() {
                 style={{ transitionDelay: `${index * 150}ms` }}
                 onMouseEnter={() => playSound('hover')}
               >
-                <CardContent className="p-10">
+                <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-2xl font-black text-white uppercase italic group-hover:text-primary transition-colors">{step.title}</h3>
-                    <span className="text-xs bg-primary/20 text-primary px-4 py-1.5 rounded-full font-black tracking-widest border border-primary/30">{step.year}</span>
+                    <h3 className="text-xl font-black text-white uppercase italic group-hover:text-primary transition-colors">{step.title}</h3>
+                    <span className="text-[10px] bg-primary/20 text-primary px-4 py-1.5 rounded-full font-black tracking-widest border border-primary/30">{step.year}</span>
                   </div>
-                  <p className="text-white/80 text-lg leading-relaxed font-medium">{step.desc}</p>
+                  <p className="text-white/80 text-base leading-relaxed font-medium">{step.desc}</p>
                 </CardContent>
               </Card>
             ))}
