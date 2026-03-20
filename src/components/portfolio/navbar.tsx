@@ -43,7 +43,7 @@ export default function Navbar() {
             <HardHat size={20} />
           </div>
           <span className="text-sm font-black text-white uppercase tracking-[0.3em] hidden sm:block">
-            J. Oliveira
+            Jeovane de Oliveira
           </span>
         </div>
 
